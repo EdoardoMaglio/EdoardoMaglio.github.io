@@ -1,0 +1,26 @@
+# Fonti private: MAI nel repository pubblico
+materiale/
+_tmp/
+
+# Dipendenze e build
+node_modules/
+dist/
+.astro/
+
+# Log e ambiente
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.*
+!.env.example
+
+# Sistema ed editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
