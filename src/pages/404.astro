@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { t } from '../lib/sito';
+---
+<Base titolo={t.pagina_404_titolo}>
+  <div class="pagina-testa">
+    <h1>{t.pagina_404_titolo}</h1>
+    <p>{t.pagina_404_testo}</p>
+  </div>
+  <div class="azioni" style="margin-top:1.5rem"><a class="btn primario" href="/">{t.pagina_404_link}</a></div>
+</Base>

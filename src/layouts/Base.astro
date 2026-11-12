@@ -1,0 +1,113 @@
+---
+import '../styles/sito.css';
+import { sito, t, testo, pieno } from '../lib/sito';
+
+interface Props { titolo?: string; descrizione?: string; attivo?: string }
+const { titolo, descrizione, attivo } = Astro.props;
+const p = sito.profilo;
+const titoloPagina = titolo ? `${titolo} — ${p.nome}` : `${p.nome} — ${p.titolo}`;
+const canonico = new URL(Astro.url.pathname, Astro.site);
+const anno = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{titoloPagina}</title>
+  <meta name="description" content={descrizione || p.presentazione}>
+  <link rel="canonical" href={canonico}>
+  <meta property="og:title" content={titoloPagina}>
+  <meta property="og:description" content={descrizione || p.presentazione}>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonico}>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/font/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script is:inline>
+    try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenuto">{t.salta}</a>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>{p.nome}</a>
+      <nav aria-label={t.menu_etichetta}>
+        <ul>
+          {t.menu.map((v: { nome: string; url: string }) => (
+            <li><a href={v.url} aria-current={attivo === v.url ? 'page' : undefined}>{v.nome}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <div class="tools">
+        <button class="tbtn" id="tema" type="button"
+          data-scuro={t.tema_scuro} data-chiaro={t.tema_chiaro}
+          data-scuro-title={t.tema_scuro_suggerimento} data-chiaro-title={t.tema_chiaro_suggerimento}>{t.tema_scuro}</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenuto" class="wrap">
+    <slot />
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>{testo('footer', { anno })}</p>
+      <ul>
+        <li><a href={`mailto:${p.email}`}>{t.footer_email}</a></li>
+        {p.link.filter((l: any) => pieno(l.url)).map((l: any) => <li><a href={l.url}>{l.nome}</a></li>)}
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="lente" id="lente">
+    <form method="dialog"><button class="btn" type="submit">{t.chiudi}</button></form>
+    <img alt="">
+  </dialog>
+
+  <script is:inline>
+    // Tema: l'etichetta dice l'azione, il title aggiunge il suggerimento
+    (() => {
+      const b = document.getElementById('tema'), r = document.documentElement;
+      const scuro = () => (r.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+      const aggiorna = () => {
+        b.textContent = scuro() ? b.dataset.chiaro : b.dataset.scuro;
+        b.title = scuro() ? b.dataset.chiaroTitle : b.dataset.scuroTitle;
+      };
+      b.addEventListener('click', () => { r.dataset.theme = scuro() ? 'light' : 'dark'; try { localStorage.setItem('tema', r.dataset.theme); } catch (e) {} aggiorna(); });
+      aggiorna();
+    })();
+
+    // YouTube: senza JavaScript la copertina è un link al video.
+    // Con JavaScript, al clic carica il player da youtube-nocookie.com (prima, nessuna richiesta a YouTube).
+    document.querySelectorAll('a.play[data-yt]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const m = a.closest('.media');
+        const id = encodeURIComponent(a.dataset.yt);
+        const src = a.dataset.lista
+          ? `https://www.youtube-nocookie.com/embed/videoseries?list=${id}&autoplay=1&rel=0`
+          : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        const f = document.createElement('iframe');
+        f.src = src; f.title = a.dataset.titolo;
+        f.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture; gyroscope; accelerometer';
+        f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
+        m.replaceChildren(f); f.focus();
+      });
+    });
+
+    // Galleria: senza JavaScript ogni immagine si apre da sola; con JavaScript si ingrandisce sopra la pagina
+    const lente = document.getElementById('lente');
+    document.querySelectorAll('.galleria a').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const img = lente.querySelector('img');
+        img.src = a.href; img.alt = a.querySelector('img').alt;
+        lente.showModal();
+      });
+    });
+    lente.addEventListener('click', (e) => { if (e.target === lente) lente.close(); });
+  </script>
+</body>
+</html>

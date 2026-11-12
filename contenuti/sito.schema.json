@@ -1,0 +1,286 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "sito.schema.json",
+  "title": "Contenuti del sito di Edoardo Maglio",
+  "description": "Regole di contenuti/sito.yml. In VS Code, con l'estensione YAML di Red Hat, gli errori si vedono sottolineati mentre scrivi.",
+  "type": "object",
+  "required": ["profilo", "categorie", "stati", "progetti", "testi"],
+  "definitions": {
+    "data": {
+      "description": "Anno-mese, per esempio 2025-07. Va bene anche solo l'anno (2021) oppure «oggi».",
+      "type": "string",
+      "pattern": "^(\\d{4}(-(0[1-9]|1[0-2]))?|oggi)$"
+    },
+    "anno": {
+      "description": "Testo libero: 2024, «dal 2024», «2024-2025».",
+      "type": ["string", "integer"]
+    },
+    "visibile": {
+      "description": "false nasconde l'elemento dal sito senza cancellarlo. Se manca vale true.",
+      "type": "boolean"
+    },
+    "url": {
+      "description": "Indirizzo completo che comincia con https://. Vuoto (\"\") = non compare.",
+      "type": "string",
+      "anyOf": [{ "const": "" }, { "pattern": "^https://" }]
+    },
+    "file": {
+      "description": "File dentro public/, scritto senza «public/»: img/foto.jpg",
+      "type": "string",
+      "pattern": "^(?!public/)(?!/)[^\\s]*$"
+    },
+    "link": {
+      "type": "object",
+      "required": ["etichetta", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "etichetta": { "description": "Cosa c'è dall'altra parte: «Guarda il corto su YouTube».", "type": "string" },
+        "url": { "$ref": "#/definitions/url" }
+      }
+    },
+    "media": {
+      "type": "object",
+      "required": ["tipo"],
+      "properties": {
+        "tipo": { "enum": ["youtube", "video", "pdf", "galleria", "drive"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "tipo": { "const": "youtube" } } },
+          "then": {
+            "additionalProperties": false,
+            "anyOf": [{ "required": ["id"] }, { "required": ["playlist"] }],
+            "properties": {
+              "tipo": {},
+              "id": { "description": "Il codice dopo v= nell'indirizzo di YouTube.", "type": "string" },
+              "playlist": { "description": "Il codice dopo list= nell'indirizzo di una playlist.", "type": "string" },
+              "poster": { "$ref": "#/definitions/file" },
+              "miniatura": { "description": "false: lo script poster_youtube.py non scarica la miniatura di YouTube.", "type": "boolean" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "tipo": { "const": "video" } } },
+          "then": {
+            "additionalProperties": false,
+            "required": ["file"],
+            "properties": { "tipo": {}, "file": { "$ref": "#/definitions/file" }, "poster": { "$ref": "#/definitions/file" } }
+          }
+        },
+        {
+          "if": { "properties": { "tipo": { "const": "pdf" } } },
+          "then": {
+            "additionalProperties": false,
+            "required": ["file"],
+            "properties": {
+              "tipo": {},
+              "file": { "$ref": "#/definitions/file" },
+              "anteprima": { "$ref": "#/definitions/file" },
+              "etichetta": { "type": "string" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "tipo": { "const": "galleria" } } },
+          "then": {
+            "additionalProperties": false,
+            "required": ["immagini"],
+            "properties": {
+              "tipo": {},
+              "immagini": { "type": "array", "items": { "$ref": "#/definitions/file" } },
+              "didascalie": { "description": "Una descrizione per immagine, nello stesso ordine: la legge chi non vede.", "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "tipo": { "const": "drive" } } },
+          "then": {
+            "description": "Da importare con: python strumenti/importa_drive.py <id-progetto>",
+            "additionalProperties": false,
+            "required": ["url"],
+            "properties": { "tipo": {}, "url": { "type": "string" } }
+          }
+        }
+      ]
+    },
+    "cliente": {
+      "oneOf": [
+        { "description": "Solo il nome del cliente.", "type": "string" },
+        {
+          "type": "object",
+          "required": ["nome"],
+          "additionalProperties": false,
+          "properties": {
+            "nome": { "type": "string" },
+            "periodo": { "type": "string" },
+            "ruolo": { "type": "string" },
+            "url": { "$ref": "#/definitions/url" },
+            "link": { "type": "array", "items": { "$ref": "#/definitions/link" } }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "profilo": {
+      "type": "object",
+      "required": ["nome", "titolo", "email"],
+      "properties": {
+        "nome": { "type": "string" },
+        "titolo": { "type": "string" },
+        "presentazione": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "cv_pdf": { "anyOf": [{ "const": "" }, { "$ref": "#/definitions/file" }] },
+        "link": {
+          "type": "array",
+          "items": { "type": "object", "required": ["nome", "url"], "properties": { "nome": { "type": "string" }, "url": { "$ref": "#/definitions/url" } } }
+        },
+        "scheda": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["etichetta", "valore"],
+            "properties": { "etichetta": { "type": "string" }, "valore": { "type": "string" }, "da": { "$ref": "#/definitions/data" } }
+          }
+        },
+        "chi_sono": { "type": "string" }
+      }
+    },
+    "esperienze": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ruolo", "azienda", "da"],
+        "properties": {
+          "ruolo": { "type": "string" },
+          "azienda": { "type": "string" },
+          "luogo": { "type": "string" },
+          "da": { "$ref": "#/definitions/data" },
+          "a": { "$ref": "#/definitions/data" },
+          "tipo": { "type": "string" },
+          "punti": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "formazione": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["titolo", "ente"],
+        "properties": {
+          "titolo": { "type": "string" },
+          "ente": { "type": "string" },
+          "da": { "$ref": "#/definitions/data" },
+          "a": { "$ref": "#/definitions/data" },
+          "nota": { "type": "string" }
+        }
+      }
+    },
+    "categorie": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "lettera"],
+        "properties": {
+          "id": { "enum": ["video", "giochi", "digitale"] },
+          "nome": { "type": "string" },
+          "lettera": { "type": "string", "maxLength": 1 },
+          "descrizione": { "type": "string" }
+        }
+      }
+    },
+    "stati": {
+      "type": "object",
+      "propertyNames": { "enum": ["online", "in_uso", "concluso", "in_sviluppo", "in_testing", "prototipo", "concept", "fermo"] },
+      "additionalProperties": {
+        "type": "object",
+        "required": ["nome"],
+        "properties": { "nome": { "type": "string" }, "vivo": { "type": "boolean" } }
+      }
+    },
+    "progetti": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "titolo", "categoria", "sezione"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "description": "Nome breve: lettere minuscole, numeri e trattini. Diventa l'indirizzo /lavori/<id>/", "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "titolo": { "type": "string" },
+          "categoria": { "enum": ["video", "giochi", "digitale"] },
+          "sezione": { "description": "lavori = scheda completa; scartati / archivio = riga compatta", "enum": ["lavori", "scartati", "archivio"] },
+          "visibile": { "$ref": "#/definitions/visibile" },
+          "in_evidenza": { "description": "true = in home (da 0 a 4 progetti; solo online, in uso, conclusi o prototipi giocabili)", "type": "boolean" },
+          "anno": { "$ref": "#/definitions/anno" },
+          "da": { "$ref": "#/definitions/data" },
+          "a": { "$ref": "#/definitions/data" },
+          "ruolo": { "type": "string" },
+          "strumenti": { "type": "array", "items": { "type": "string" } },
+          "riconoscimenti": { "description": "Selezioni e premi del progetto: «Official Selection – …».", "type": "array", "items": { "type": "string" } },
+          "stato": { "enum": ["", "online", "in_uso", "concluso", "in_sviluppo", "in_testing", "prototipo", "concept", "fermo"] },
+          "testo": { "description": "Una o due frasi.", "type": "string" },
+          "immagine": { "anyOf": [{ "const": "" }, { "$ref": "#/definitions/file" }] },
+          "alt": { "description": "Descrizione dell'immagine per chi non vede.", "type": "string" },
+          "media": { "type": ["array", "null"], "items": { "$ref": "#/definitions/media" } },
+          "link": { "type": "array", "items": { "$ref": "#/definitions/link" } },
+          "clienti": { "type": "array", "items": { "$ref": "#/definitions/cliente" } }
+        }
+      }
+    },
+    "premi": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["premio"],
+        "additionalProperties": false,
+        "properties": {
+          "premio": { "type": "string" },
+          "edizione": { "type": "string" },
+          "risultato": { "type": "string" },
+          "opera": { "type": "string" },
+          "anno": { "$ref": "#/definitions/anno" },
+          "url": { "$ref": "#/definitions/url" },
+          "visibile": { "$ref": "#/definitions/visibile" }
+        }
+      }
+    },
+    "pubblicazioni": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Un'opera (titolo, tipo, raccolta, editore, anno) oppure una riga libera con solo «testo».",
+        "anyOf": [{ "required": ["titolo"] }, { "required": ["testo"] }],
+        "additionalProperties": false,
+        "properties": {
+          "titolo": { "type": "string" },
+          "testo": { "description": "Riga libera, stampata così com'è.", "type": "string" },
+          "raccolta": { "description": "L'antologia o il volume che contiene l'opera.", "type": "string" },
+          "tipo": { "type": "string" },
+          "editore": { "type": "string" },
+          "anno": { "$ref": "#/definitions/anno" },
+          "url": { "$ref": "#/definitions/url" },
+          "visibile": { "$ref": "#/definitions/visibile" }
+        }
+      }
+    },
+    "sceneggiature": {
+      "type": "array",
+      "items": { "type": "object", "required": ["titolo"], "properties": { "titolo": { "type": "string" }, "testo": { "type": "string" }, "visibile": { "$ref": "#/definitions/visibile" } } }
+    },
+    "racconti": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["titolo"],
+        "additionalProperties": false,
+        "properties": {
+          "titolo": { "type": "string" },
+          "testo": { "description": "Una riga di presentazione. Mai il testo completo.", "type": "string" },
+          "concorso": { "description": "Solo promemoria: non compare sul sito.", "type": "string" },
+          "visibile": { "$ref": "#/definitions/visibile" }
+        }
+      }
+    },
+    "testi": { "type": "object", "additionalProperties": { "type": ["string", "array"] } }
+  }
+}

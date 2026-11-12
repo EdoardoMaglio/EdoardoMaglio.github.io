@@ -1,0 +1,20 @@
+---
+// Righe compatte per Giochi scartati e Archivio: nome, anno, una riga. Nessuna scheda.
+import { quando, type Progetto } from '../lib/sito';
+interface Props { titolo: string; id: string; voci: Progetto[] }
+const { titolo, id, voci } = Astro.props;
+---
+{voci.length > 0 && (
+  <section aria-labelledby={id}>
+    <div class="testa-sez"><h2 id={id}>{titolo}</h2></div>
+    <ul class="compatto">
+      {voci.map((p) => (
+        <li>
+          <span class="nome">{p.titolo}</span>
+          <span class="anno">{quando(p)}</span>
+          <span class="desc">{p.testo ?? ''}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

@@ -1,0 +1,28 @@
+---
+// Copertina locale con pulsante. Senza JavaScript è un link al video;
+// con JavaScript il player di youtube-nocookie.com si carica solo al clic.
+// Senza poster mostra la copertina tipografica del progetto (categoria e anno).
+import { src, testo, t, pieno, categoria, quando, type Progetto } from '../lib/sito';
+interface Props { id?: string; playlist?: string; poster?: string; titolo: string; p?: Progetto }
+const { id, playlist, poster, titolo, p } = Astro.props;
+const href = playlist ? `https://www.youtube.com/playlist?list=${playlist}` : `https://www.youtube.com/watch?v=${id}`;
+const etichetta = testo('riproduci', { titolo });
+const c = p ? categoria(p.categoria) : undefined;
+---
+<div>
+  <div class="media">
+    <a class="play" href={href} data-yt={playlist || id} data-lista={playlist ? '1' : undefined} data-titolo={titolo}
+      aria-label={`${etichetta} (${t.riproduci_dove})`}>
+      {pieno(poster) ? <img src={src(poster)} alt="" loading="lazy" decoding="async">
+        : c && (
+          <span class="copertina-tipo" aria-hidden="true">
+            <span class="cat">{c.lettera} · {c.nome}</span>
+            <span class="tit">{c.lettera}</span>
+            {pieno(quando(p!)) && <span class="piede">{quando(p!)}</span>}
+          </span>
+        )}
+      <span class="play-lab"><span class="tri" aria-hidden="true"></span>{etichetta}</span>
+    </a>
+  </div>
+  <p class="nota-media">{t.nota_youtube}</p>
+</div>

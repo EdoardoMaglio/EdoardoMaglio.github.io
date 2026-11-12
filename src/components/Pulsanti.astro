@@ -1,0 +1,13 @@
+---
+// Link esterni come pulsanti con un'etichetta che dice dove portano; in coda, la scheda del progetto.
+import { linkPieni, t, type Link } from '../lib/sito';
+interface Props { link?: Link[]; scheda?: string }
+const { link, scheda } = Astro.props;
+const l = linkPieni(link);
+---
+{(l.length > 0 || scheda) && (
+  <div class="azioni">
+    {l.map((x) => <a class="btn" href={x.url}>{x.etichetta} <span class="ext" aria-hidden="true">↗</span></a>)}
+    {scheda && <a class="btn" href={scheda}>{t.scheda_progetto}</a>}
+  </div>
+)}

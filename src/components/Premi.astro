@@ -1,0 +1,37 @@
+---
+// Premi letterari: anno · premio ed edizione · risultato · opera · fonte, sempre in quest'ordine.
+// Un campo vuoto lascia la sua colonna vuota, così le righe restano allineate.
+import { premi, pubblicazioni as tutte, t, pieno } from '../lib/sito';
+// Una pubblicazione è un'opera (tipo «titolo», in «raccolta», editore, anno) oppure una riga di testo libero.
+const pubblicazioni = tutte.filter((x: any) => pieno(x.titolo) || pieno(x.testo));
+const maiuscola = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const descrivi = (x: any) => pieno(x.testo) ? x.testo : [
+  [pieno(x.tipo) ? maiuscola(x.tipo) : '', `«${x.titolo}»`].filter(Boolean).join(' '),
+  pieno(x.raccolta) ? `in «${x.raccolta}»` : '',
+  x.editore ?? '',
+  pieno(x.anno) ? String(x.anno) : '',
+].filter(pieno).join(', ');
+// Una colonna che è vuota per tutti i premi non occupa spazio.
+const classi = ['premi', !premi.some((x: any) => pieno(x.anno)) && 'senza-anno', !premi.some((x: any) => pieno(x.url)) && 'senza-fonte'].filter(Boolean).join(' ');
+---
+<ul class={classi}>
+  {premi.map((x: any) => (
+    <li>
+      <span class="anno">{pieno(x.anno) ? x.anno : ''}</span>
+      <span class="premio">{x.premio}{pieno(x.edizione) && <span class="ed">{x.edizione}</span>}</span>
+      <span class="esito">{x.risultato ?? ''}</span>
+      <span class="opera">{pieno(x.opera) ? `«${x.opera}»` : ''}</span>
+      <span class="fonte">{pieno(x.url) ? <a href={x.url}>{t.premi_fonte_link}</a> : ''}</span>
+    </li>
+  ))}
+</ul>
+{pubblicazioni.length > 0 && (
+  <div class="pubblicazioni">
+    <p class="chi">{t.pubblicazioni}</p>
+    <ul>
+      {pubblicazioni.map((x: any) => (
+        <li>{descrivi(x)}{pieno(x.url) && <> · <a href={x.url}>{x.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></>}</li>
+      ))}
+    </ul>
+  </div>
+)}

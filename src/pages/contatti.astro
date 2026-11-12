@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import { sito, t, pieno, src } from '../lib/sito';
+const p = sito.profilo;
+---
+<Base titolo={t.contatti_titolo} attivo="/contatti/">
+  <div class="pagina-testa">
+    <h1>{t.contatti_titolo}</h1>
+    {pieno(t.contatti_intro) && <p>{t.contatti_intro}</p>}
+  </div>
+  <div class="azioni" style="margin-top:1.5rem">
+    <a class="btn primario" href={`mailto:${p.email}`}>{p.email}</a>
+    {p.link.filter((l: any) => pieno(l.url)).map((l: any) => <a class="btn" href={l.url}>{l.nome} <span class="ext" aria-hidden="true">↗</span></a>)}
+  </div>
+  {pieno(p.cv_pdf) && (
+    <section id="cv" aria-labelledby="h-cv">
+      <div class="testa-sez"><h2 id="h-cv">{t.contatti_cv}</h2></div>
+      <a class="btn" href={src(p.cv_pdf)}>{t.scarica_cv}</a>
+    </section>
+  )}
+</Base>

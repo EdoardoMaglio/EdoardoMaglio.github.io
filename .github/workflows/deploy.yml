@@ -16,18 +16,28 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# Come funziona:
+#   1. «Verifica e costruzione» lancia `npm run build`, cioè prima strumenti/verifica.mjs
+#      (controlla contenuti/sito.yml) e solo se passa `astro build`.
+#   2. «Pubblicazione» parte solo se il passo 1 è riuscito (needs: build).
+# Se la verifica trova un errore, il passo 1 diventa rosso, la pubblicazione non parte
+# e online resta la versione precedente. Il messaggio con il numero di riga è nella scheda
+# Actions di GitHub → l'esecuzione rossa → «Verifica e costruzione».
 jobs:
   build:
+    name: Verifica e costruzione
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-      - name: Install, build e upload
+      - name: Verifica di sito.yml, build e upload
         uses: withastro/action@v6
         with:
           node-version: 24
+          build-cmd: npm run build   # = verifica + astro build
 
   deploy:
+    name: Pubblicazione
     needs: build
     runs-on: ubuntu-latest
     environment:

@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import Premi from '../components/Premi.astro';
+import { premi, sceneggiature as tutteS, racconti as tuttiR, t, pieno } from '../lib/sito';
+const sceneggiature = tutteS.filter((x: any) => pieno(x.titolo));
+const racconti = tuttiR.filter((x: any) => pieno(x.titolo));
+---
+<Base titolo={t.scrittura_titolo} attivo="/scrittura/">
+  <div class="pagina-testa"><h1>{t.scrittura_titolo}</h1></div>
+
+  {premi.length > 0 && (
+    <section aria-labelledby="h-premi">
+      <div class="testa-sez"><h2 id="h-premi">{t.home_premi}</h2></div>
+      <Premi />
+    </section>
+  )}
+
+  {sceneggiature.length > 0 && (
+    <section aria-labelledby="h-scen">
+      <div class="testa-sez"><h2 id="h-scen">{t.scrittura_sceneggiature}</h2></div>
+      <ul class="elenco-semplice">
+        {sceneggiature.map((x: any) => <li><span class="tit">{x.titolo}</span>{pieno(x.testo) && <> · {x.testo}</>}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {racconti.length > 0 && (
+    <section aria-labelledby="h-racc">
+      <div class="testa-sez"><h2 id="h-racc">{t.scrittura_racconti}</h2></div>
+      <ul class="elenco-semplice">
+        {racconti.map((x: any) => <li><span class="tit">{x.titolo}</span>{pieno(x.testo) && <> · {x.testo}</>}</li>)}
+      </ul>
+      {pieno(t.scrittura_racconti_nota) && <p class="nota">{t.scrittura_racconti_nota}</p>}
+    </section>
+  )}
+</Base>

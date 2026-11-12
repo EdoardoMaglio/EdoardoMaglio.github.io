@@ -7,11 +7,13 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "verifica": "node strumenti/verifica.mjs",
+    "build": "node strumenti/verifica.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.10"
+    "astro": "^7.4.10",
+    "yaml": "^2.9.1"
   }
 }

@@ -1,0 +1,15 @@
+---
+// Copertina tipografica per i progetti senza immagine: solo categoria e anno.
+// Il titolo resta sotto, nella scheda.
+import { categoria, quando, pieno, t, type Progetto } from '../lib/sito';
+interface Props { p: Progetto }
+const { p } = Astro.props;
+const c = categoria(p.categoria);
+---
+<div class="media" role="img" aria-label={`${t.copertina}: ${c.nome}${pieno(quando(p)) ? ', ' + quando(p) : ''}`}>
+  <div class="copertina-tipo" aria-hidden="true">
+    <span class="cat">{c.lettera} · {c.nome}</span>
+    <span class="tit">{c.lettera}</span>
+    {pieno(quando(p)) && <span class="piede">{quando(p)}</span>}
+  </div>
+</div>

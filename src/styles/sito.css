@@ -1,0 +1,249 @@
+@font-face { font-family: "Archivo"; src: url(/font/archivo-latin-wdth-normal.woff2) format("woff2"); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+@font-face { font-family: "Courier Prime"; src: url(/font/courier-prime-latin-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+
+/* Stile del sito (direzione C).
+   Metadati impaginati come una scheda tecnica: etichetta stretta + valore in Courier Prime.
+   Tutto il resto è Archivo. Un solo colore d'accento, rosso matita.
+   Qui non c'è nessun testo visibile: i testi sono tutti in contenuti/sito.yml. */
+:root {
+  --bg: #f7f7f4; --surf: #ffffff; --text: #121212; --muted: #4a4a48;
+  --accent: #b8141b; --on-accent: #ffffff; --line: #86867f; --rule: #121212; --soft: #e4e4de;
+  --sans: "Archivo", system-ui, sans-serif;
+  --meta: "Courier Prime", "Courier New", monospace;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  /* Scala tipografica: 7 gradini, rapporto 1,25. Nessuna altra misura nel testo */
+  --t-xs: .78rem; --t-s: .9rem; --t-m: 1.0625rem;
+  --t-l: clamp(1.15rem, 1.05rem + .4vw, 1.33rem);
+  --t-xl: clamp(1.33rem, 1.15rem + .7vw, 1.66rem);
+  --t-2xl: clamp(1.66rem, 1.3rem + 1.4vw, 2.6rem);
+  --t-3xl: clamp(2.6rem, 1.4rem + 6vw, 5.6rem);
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #151617; --surf: #1e2022; --text: #ecebe5; --muted: #a6a59e;
+  --accent: #ff7466; --on-accent: #151617; --line: #6f706b; --rule: #ecebe5; --soft: #2c2e31;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151617; --surf: #1e2022; --text: #ecebe5; --muted: #a6a59e;
+    --accent: #ff7466; --on-accent: #151617; --line: #6f706b; --rule: #ecebe5; --soft: #2c2e31;
+    color-scheme: dark;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: 5rem; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 var(--t-m)/1.6 var(--sans); }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.skip { position: absolute; left: 1rem; top: -4rem; background: var(--accent); color: var(--on-accent); padding: .6rem 1rem; z-index: 10; }
+.skip:focus { top: 1rem; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-inline: var(--gutter); }
+
+/* Titoli: usano solo i gradini della scala */
+h1 { font: 800 var(--t-3xl)/.92 var(--sans); font-stretch: 75%; letter-spacing: -.01em; margin: 0 0 .9rem; }
+h2 { font: 800 var(--t-2xl)/1.1 var(--sans); font-stretch: 80%; margin: 0; }
+h3 { font: 800 var(--t-xl)/1.1 var(--sans); font-stretch: 85%; margin: 0; }
+.lead { font-size: var(--t-l); line-height: 1.5; max-width: 38ch; margin: 0 0 1.4rem; }
+
+/* Scheda tecnica: l'unico posto dove compare Courier Prime */
+.scheda { display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0; font-size: var(--t-s); }
+.scheda dt { font: 600 var(--t-xs)/1.9 var(--sans); font-stretch: 75%; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.scheda dd { margin: 0; font-family: var(--meta); line-height: 1.5; }
+
+/* Pulsanti: rettangoli netti, alti almeno 44 px, etichetta che dice dove porta */
+.azioni { display: flex; flex-wrap: wrap; gap: .6rem; }
+.btn { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.75rem; padding: .45rem 1rem; border: 1.5px solid var(--rule); background: var(--surf); color: var(--text); font: 650 var(--t-s)/1.25 var(--sans); text-decoration: none; }
+.btn:hover { color: var(--text); border-color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); }
+.btn.primario { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn.primario:hover { color: var(--on-accent); box-shadow: none; text-decoration: underline; }
+.btn .ext { font-family: var(--sans); }
+
+/* Testata */
+header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1.5px solid var(--rule); }
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; padding-block: .35rem; }
+.logo { font: 800 var(--t-m)/1 var(--sans); font-stretch: 80%; text-decoration: none; margin-right: auto; padding-block: .7rem; }
+nav { order: 3; width: 100%; overflow-x: auto; }
+@media (min-width: 860px) { nav { order: 0; width: auto; } }
+@media (max-width: 400px) { nav ul { gap: .9rem !important; } nav a { font-size: var(--t-s); } }
+nav ul { display: flex; gap: 1.4rem; list-style: none; margin: 0; padding: 0; }
+nav a { display: inline-block; padding: .55rem 0; text-decoration: none; font-weight: 600; white-space: nowrap; }
+nav a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--accent); }
+.tools { display: flex; gap: .4rem; }
+.tbtn { min-height: 2.75rem; padding: 0 .8rem; background: none; border: 1px solid var(--line); color: var(--text); font: 600 var(--t-s) var(--sans); cursor: pointer; display: inline-grid; place-items: center; text-decoration: none; }
+
+/* Sezioni */
+section { margin-block: clamp(2.5rem, 2rem + 3vw, 4.5rem); }
+.testa-sez { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .3rem 1rem; border-top: 1.5px solid var(--rule); padding-top: .6rem; margin-bottom: 1.25rem; }
+.testa-sez a { font-weight: 600; }
+
+/* 1. Apertura */
+.apertura { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 2rem clamp(1.5rem, 4vw, 3.5rem); align-items: start; margin-top: clamp(1.5rem, 1rem + 3vw, 3.5rem); }
+@media (max-width: 860px) { .apertura { grid-template-columns: 1fr; } }
+.ruolo { font: 700 var(--t-l)/1.3 var(--sans); margin: 0 0 .6rem; }
+.apertura .scheda { padding-top: 1rem; border-top: 1.5px solid var(--rule); align-self: end; }
+.contatti { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; list-style: none; padding: 0; margin: 1.25rem 0 0; }
+.contatti a { display: inline-block; padding-block: .35rem; font-weight: 600; }
+
+/* 2. Cosa faccio: elenco a righe (niente tre card uguali) */
+.ingressi { list-style: none; margin: 0; padding: 0; border-bottom: 1.5px solid var(--rule); }
+.ingressi li + li { border-top: 1px solid var(--line); }
+.ingressi a { display: grid; grid-template-columns: 2.2rem minmax(0, 14rem) minmax(0, 1fr) auto; gap: .2rem 1.25rem; align-items: baseline; padding: 1rem .25rem; text-decoration: none; }
+.ingressi .let { font: 400 var(--t-m) var(--meta); color: var(--muted); }
+.ingressi .desc { color: var(--muted); }
+.ingressi .num { font: 400 var(--t-s) var(--meta); white-space: nowrap; }
+.ingressi a:hover h3 { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; }
+@media (max-width: 700px) {
+  .ingressi a { grid-template-columns: 2.2rem 1fr auto; }
+  .ingressi .desc { grid-column: 2 / -1; grid-row: 2; }
+}
+
+/* 3. In evidenza: una scheda costante per ogni progetto */
+.lavori { display: grid; gap: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.lavoro { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.25rem clamp(1.25rem, 3vw, 2.5rem); align-items: start; }
+@media (max-width: 820px) { .lavoro { grid-template-columns: 1fr; } }
+.media { position: relative; aspect-ratio: 16 / 9; background: var(--soft); border: 1px solid var(--line); overflow: hidden; }
+.media img { width: 100%; height: 100%; object-fit: cover; }
+.media iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.play { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; color: var(--on-accent); }
+.play img { width: 100%; height: 100%; object-fit: cover; }
+.play .play-lab { position: absolute; left: 1rem; bottom: 1rem; display: inline-flex; align-items: center; gap: .55rem; min-height: 2.75rem; padding: .4rem 1rem; background: var(--accent); font: 700 var(--t-m) var(--sans); }
+.play .tri { width: 0; height: 0; border-left: .75em solid currentColor; border-top: .45em solid transparent; border-bottom: .45em solid transparent; }
+.play:hover .play-lab, .play:focus-visible .play-lab { text-decoration: underline; }
+.play:focus-visible { outline-offset: -5px; }
+.nota-media { margin: .45rem 0 0; font-size: var(--t-s); color: var(--muted); }
+.copertina-tipo { position: absolute; inset: 0; display: grid; align-content: space-between; padding: clamp(1rem, 3vw, 1.6rem); background: var(--surf); }
+.copertina-tipo .cat { font: 600 var(--t-xs) var(--sans); font-stretch: 75%; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.copertina-tipo .tit { font: 800 clamp(4rem, 2rem + 8vw, 8rem)/.8 var(--sans); font-stretch: 62%; color: var(--muted); }
+.copertina-tipo .piede { font: 400 var(--t-s) var(--meta); border-top: 1px solid var(--line); padding-top: .5rem; }
+.lavoro .testo h3 a { text-decoration: none; }
+.lavoro .testo h3 a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.lavoro .riga { margin: .45rem 0 1rem; }
+.lavoro .scheda { padding-block: .75rem; border-block: 1px solid var(--line); margin-bottom: 1rem; }
+.stato { display: inline-flex; align-items: center; gap: .4rem; }
+.stato::before { content: ""; width: .55rem; height: .55rem; background: var(--text); }
+.stato.vivo::before { background: var(--accent); }
+
+/* 4. Premi letterari: anno · premio · risultato · opera · fonte, sempre in quest'ordine */
+.premi { list-style: none; margin: 1rem 0 0; padding: 0; }
+.premi li { display: grid; grid-template-columns: 4.5rem minmax(0, 1.5fr) 7rem minmax(0, 1.2fr) 5rem; gap: .2rem 1.25rem; align-items: baseline; padding: .8rem 0; border-top: 1px solid var(--line); }
+.premi li:last-child { border-bottom: 1px solid var(--line); }
+.premi .anno, .premi .esito { font-family: var(--meta); }
+.premi.senza-anno .anno, .premi.senza-fonte .fonte { display: none; }
+.premi.senza-anno li { grid-template-columns: minmax(0, 1.5fr) 7rem minmax(0, 1.2fr) 5rem; }
+.premi.senza-fonte li { grid-template-columns: 4.5rem minmax(0, 1.5fr) 7rem minmax(0, 1.2fr); }
+.premi.senza-anno.senza-fonte li { grid-template-columns: minmax(0, 1.5fr) 7rem minmax(0, 1.2fr); }
+.premi .premio { font-weight: 700; }
+.premi .ed { display: block; font-weight: 400; color: var(--muted); }
+.premi .opera { font-style: italic; }
+.pubblicazioni { margin: 1.25rem 0 0; }
+.pubblicazioni .chi { font-weight: 700; margin: 0; }
+.pubblicazioni ul { margin: .35rem 0 0; padding-left: 1.1rem; }
+.pubblicazioni li + li { margin-top: .2rem; }
+@media (max-width: 760px) {
+  .premi li { grid-template-columns: 4.5rem minmax(0, 1fr); }
+  .premi .premio, .premi .opera, .premi .fonte { grid-column: 2; }
+  .premi .esito { grid-column: 1; grid-row: 2; }
+}
+@media (max-width: 760px) {
+  .premi.senza-anno li, .premi.senza-anno.senza-fonte li { grid-template-columns: 1fr; }
+  .premi.senza-anno .premio, .premi.senza-anno .opera, .premi.senza-anno .fonte, .premi.senza-anno .esito { grid-column: 1; grid-row: auto; }
+}
+
+/* 5. Percorso in breve */
+.percorso { list-style: none; margin: 0; padding: 0; }
+.percorso li { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: .1rem 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); }
+.percorso li:last-child { border-bottom: 1px solid var(--line); }
+.percorso .date { font: 400 var(--t-s)/1.6 var(--meta); color: var(--muted); }
+.percorso .chi { font-weight: 700; }
+@media (max-width: 600px) { .percorso li { grid-template-columns: 1fr; } }
+
+footer { border-top: 1.5px solid var(--rule); margin-top: 4rem; padding-block: 1.5rem 2.5rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; font-size: var(--t-s); }
+footer ul { display: flex; flex-wrap: wrap; gap: 1.25rem; list-style: none; padding: 0; margin: 0; }
+footer a { display: inline-block; padding-block: .3rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Pagina Lavori */
+.intro { max-width: 60ch; margin: 1rem 0 1.5rem; }
+.filtri ul { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: 0 0 1.75rem; padding: 0; }
+.filtri a { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.75rem; padding: .4rem .9rem; border: 1.5px solid var(--line); text-decoration: none; font-weight: 650; }
+.filtri .n { font: 400 var(--t-s) var(--meta); color: var(--muted); }
+.filtri a[aria-current="page"] { border-color: var(--rule); background: var(--rule); color: var(--bg); }
+.filtri a[aria-current="page"] .n { color: var(--bg); }
+.griglia { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 2rem clamp(1rem, 2.5vw, 1.75rem); }
+.card { display: grid; grid-template-rows: auto auto auto 1fr; align-content: start; }
+.card h3 { margin-top: .8rem; font-size: var(--t-l); }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.card .riga { margin: .35rem 0 .75rem; }
+.card .scheda { align-self: end; padding-top: .6rem; border-top: 1px solid var(--line); }
+.card .copertina-tipo .tit { font-size: clamp(3.5rem, 2rem + 4vw, 5.5rem); }
+.compatto { list-style: none; margin: 0; padding: 0; }
+.compatto li { display: grid; grid-template-columns: minmax(0, 14rem) 6rem minmax(0, 1fr); gap: .15rem 1.25rem; padding: .7rem 0; border-top: 1px solid var(--line); align-items: baseline; }
+.compatto li:last-child { border-bottom: 1px solid var(--line); }
+.compatto .nome { font-weight: 700; }
+.compatto .anno { font: 400 var(--t-s) var(--meta); color: var(--muted); }
+@media (max-width: 640px) { .compatto li { grid-template-columns: minmax(0, 1fr) auto; } .compatto .desc { grid-column: 1 / -1; } }
+
+/* Pagina di un progetto */
+.torna { display: inline-block; margin-top: 1.5rem; padding-block: .4rem; font-weight: 600; }
+.progetto-testa { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.5rem clamp(1.25rem, 3vw, 2.5rem); align-items: end; margin: 1rem 0 2rem; }
+@media (max-width: 820px) { .progetto-testa { grid-template-columns: 1fr; } }
+.progetto-testa .riga { font-size: var(--t-l); line-height: 1.5; margin: .8rem 0 0; max-width: 40ch; }
+.progetto-testa .scheda { padding-block: .75rem; border-block: 1px solid var(--line); }
+.blocco-media { display: grid; gap: 1.75rem; }
+.blocco-media video { width: 100%; height: auto; display: block; background: var(--soft); border: 1px solid var(--line); }
+.pdf { display: grid; grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); gap: 1rem 1.5rem; align-items: center; }
+.pdf img { border: 1px solid var(--line); background: var(--surf); }
+@media (max-width: 560px) { .pdf { grid-template-columns: 1fr; } .pdf img { max-width: 14rem; } }
+.galleria { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: .75rem; }
+.galleria a { display: block; aspect-ratio: 4 / 3; border: 1px solid var(--line); background: var(--soft); overflow: hidden; }
+.galleria img { width: 100%; height: 100%; object-fit: cover; }
+.galleria a:hover, .galleria a:focus-visible { border-color: var(--accent); }
+dialog.lente { max-width: min(96vw, 1600px); max-height: 94vh; padding: 0; border: 1.5px solid var(--rule); background: var(--surf); color: var(--text); }
+dialog.lente::backdrop { background: rgb(0 0 0 / .8); }
+dialog.lente img { max-width: 100%; max-height: calc(94vh - 3.5rem); width: auto; margin: 0 auto; }
+dialog.lente form { display: flex; justify-content: flex-end; padding: .4rem; }
+.clienti { width: 100%; border-collapse: collapse; }
+.clienti th { text-align: left; font: 600 var(--t-xs)/1.9 var(--sans); font-stretch: 75%; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: .3rem .75rem .3rem 0; border-bottom: 1.5px solid var(--rule); }
+.clienti td { padding: .7rem .75rem .7rem 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+.clienti td:first-child { font-weight: 700; }
+.clienti .periodo { font-family: var(--meta); white-space: nowrap; }
+.clienti ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+.clienti ul a { display: inline-block; padding-block: .3rem; }
+@media (max-width: 700px) {
+  .clienti thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .clienti tr { display: grid; grid-template-columns: 1fr; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+  .clienti td { border: 0; padding: .05rem 0; }
+}
+
+/* Chi sono, Scrittura, Contatti */
+.pagina-testa { margin: clamp(1.5rem, 1rem + 3vw, 3rem) 0 1rem; }
+.pagina-testa h1 { font-size: var(--t-2xl); }
+.pagina-testa p { font-size: var(--t-l); line-height: 1.5; max-width: 60ch; margin: 1rem 0 0; }
+.esperienze { list-style: none; margin: 0; padding: 0; }
+.esperienze > li { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: .2rem 1.5rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+.esperienze > li:last-child { border-bottom: 1px solid var(--line); }
+.esperienze .date { font: 400 var(--t-s)/1.6 var(--meta); color: var(--muted); }
+.esperienze h3 { font-size: var(--t-l); }
+.esperienze .dove { color: var(--muted); margin: .2rem 0 0; }
+.esperienze ul { margin: .5rem 0 0; padding-left: 1.1rem; max-width: 70ch; }
+.esperienze ul li + li { margin-top: .25rem; }
+@media (max-width: 600px) { .esperienze > li { grid-template-columns: 1fr; } }
+.competenze { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 1.5rem 2rem; margin: 0; }
+.competenze div { border-top: 1px solid var(--line); padding-top: .6rem; }
+.competenze dt { font-weight: 700; }
+.competenze dd { margin: .25rem 0 0; }
+.competenze .strumenti { font-family: var(--meta); font-size: var(--t-s); color: var(--muted); }
+.elenco-semplice { list-style: none; margin: 0; padding: 0; }
+.elenco-semplice li { padding: .7rem 0; border-top: 1px solid var(--line); }
+.elenco-semplice li:last-child { border-bottom: 1px solid var(--line); }
+.elenco-semplice .tit { font-weight: 700; }
+.nota { color: var(--muted); font-size: var(--t-s); margin: .6rem 0 0; }
+.clienti-elenco { max-width: 70ch; margin: 2rem 0 0; padding-top: .8rem; border-top: 1px solid var(--line); }
+.clienti-elenco .chi { font-weight: 700; }
+.play .copertina-tipo { color: var(--text); text-align: left; }

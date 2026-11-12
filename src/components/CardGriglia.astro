@@ -1,0 +1,15 @@
+---
+// Scheda uniforme della pagina Lavori: immagine 16:9, titolo, una riga, Anno · Ruolo · Stato.
+import Copertina from './Copertina.astro';
+import Scheda from './Scheda.astro';
+import { copertina, src, pieno, type Progetto } from '../lib/sito';
+interface Props { p: Progetto }
+const { p } = Astro.props;
+const img = copertina(p);
+---
+<li class={`card ${p.categoria}`}>
+  {pieno(img) ? <div class="media"><img src={src(img)} alt={p.alt ?? ''} loading="lazy" decoding="async"></div> : <Copertina p={p} />}
+  <h3><a href={`/lavori/${p.id}/`}>{p.titolo}</a></h3>
+  {pieno(p.testo) ? <p class="riga">{p.testo}</p> : <p class="riga"></p>}
+  <Scheda p={p} strumenti={false} />
+</li>

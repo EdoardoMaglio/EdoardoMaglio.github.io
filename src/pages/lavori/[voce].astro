@@ -1,0 +1,83 @@
+---
+// /lavori/<categoria>/ = filtro; /lavori/<id-progetto>/ = scheda del progetto.
+// La verifica impedisce che un progetto abbia lo stesso id di una categoria.
+import Base from '../../layouts/Base.astro';
+import Lavori from '../../components/Lavori.astro';
+import Scheda from '../../components/Scheda.astro';
+import Pulsanti from '../../components/Pulsanti.astro';
+import Media from '../../components/Media.astro';
+import { t, categorie, categoria, lavori, linkPieni, pieno, src, type Progetto } from '../../lib/sito';
+
+export function getStaticPaths() {
+  return [
+    ...categorie.map((c) => ({ params: { voce: c.id }, props: { filtro: c.id } })),
+    ...lavori.map((p) => ({ params: { voce: p.id }, props: { progetto: p } })),
+  ];
+}
+const { filtro, progetto } = Astro.props as { filtro?: string; progetto?: Progetto };
+const p = progetto;
+// clienti: elenco di nomi (una riga di testo) oppure tabella con periodo, ruolo e link
+const nomiClienti = (p?.clienti ?? []).filter((c): c is string => typeof c === 'string' && pieno(c));
+const clienti = (p?.clienti ?? []).filter((c): c is Exclude<typeof c, string> => typeof c === 'object' && c !== null && pieno(c.nome));
+const haPeriodo = clienti.some((c) => pieno(c.periodo));
+const haRuolo = clienti.some((c) => pieno(c.ruolo));
+const linkCliente = (c: any) => linkPieni([...(c.link ?? []), ...(pieno(c.url) ? [{ etichetta: c.nome, url: c.url }] : [])]);
+const haLink = clienti.some((c) => linkCliente(c).length > 0);
+---
+{filtro ? (
+  <Base titolo={`${t.lavori_titolo}: ${categoria(filtro).nome}`} attivo="/lavori/">
+    <Lavori filtro={filtro} />
+  </Base>
+) : p && (
+  <Base titolo={p.titolo} descrizione={p.testo} attivo="/lavori/">
+    <a class="torna" href={`/lavori/${p.categoria}/`}>← {categoria(p.categoria).nome}</a>
+    <div class="progetto-testa">
+      <div>
+        <h1 style="font-size:var(--t-2xl)">{p.titolo}</h1>
+        {pieno(p.testo) && <p class="riga">{p.testo}</p>}
+      </div>
+      <Scheda p={p} />
+    </div>
+
+    {(p.media ?? []).some((m) => m.tipo !== 'drive') ? <Media p={p} />
+      : pieno(p.immagine) ? <div class="media"><img src={src(p.immagine)} alt={p.alt ?? ''} decoding="async"></div>
+      : null /* niente immagine né video: nella pagina del progetto non serve un riquadro vuoto */}
+
+    {linkPieni(p.link).length > 0 && (
+      <section aria-labelledby="h-link" style="margin-block:2rem">
+        <h2 id="h-link" class="sr">{t.progetto_link}</h2>
+        <Pulsanti link={p.link} />
+      </section>
+    )}
+
+    {nomiClienti.length > 0 && (
+      <p class="clienti-elenco"><span class="chi">{t.progetto_clienti_elenco}</span> · {nomiClienti.join(', ')}</p>
+    )}
+
+    {clienti.length > 0 && (
+      <section aria-labelledby="h-clienti">
+        <div class="testa-sez"><h2 id="h-clienti">{t.progetto_clienti}</h2></div>
+        <table class="clienti">
+          <thead><tr>
+            <th scope="col">{t.clienti_nome}</th>
+            {haPeriodo && <th scope="col">{t.clienti_periodo}</th>}
+            {haRuolo && <th scope="col">{t.clienti_ruolo}</th>}
+            {haLink && <th scope="col">{t.clienti_link}</th>}
+          </tr></thead>
+          <tbody>
+            {clienti.map((c) => (
+              <tr>
+                <td>{c.nome}</td>
+                {haPeriodo && <td class="periodo">{c.periodo ?? ''}</td>}
+                {haRuolo && <td>{c.ruolo ?? ''}</td>}
+                {haLink && <td>{linkCliente(c).length > 0 && (
+                  <ul>{linkCliente(c).map((l) => <li><a href={l.url}>{l.etichetta} <span aria-hidden="true">↗</span></a></li>)}</ul>
+                )}</td>}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    )}
+  </Base>
+)}

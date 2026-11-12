@@ -1,0 +1,931 @@
+# yaml-language-server: $schema=./sito.schema.json
+# =====================================================================
+#  TUTTI I CONTENUTI DEL SITO
+#  Cambi una riga qui, salvi, e il sito si aggiorna.
+#
+#  Tre regole:
+#  1. Rientro di 2 spazi, mai il tasto Tab.
+#  2. Un testo che contiene i due punti ( : ) o che comincia con un
+#     simbolo va tra virgolette:  testo: "Tesi: The STdouble2 Box Model"
+#  3. Un campo vuoto ( "" ) o cancellato non compare sul sito.
+#
+#  Date: sempre anno-mese, per esempio 2025-07 (il sito mostra «lug 2025»).
+#  Le righe che cominciano con # sono note: il sito le ignora.
+# =====================================================================
+
+
+# ===== PROFILO =====
+profilo:
+  nome: Edoardo Maglio
+  titolo: Creative Technologist & AI Video Specialist
+  presentazione: "Lavoro dove si incontrano racconto, tecnologia e marketing: scrivo, dirigo e costruisco con l'AI flussi di produzione che portano un'idea fino a un contenuto che funziona."
+  email: maglio.edoardo42@gmail.com
+  cv_pdf: cv/edoardo-maglio-cv.pdf   # file in public/. Vuoto ("") = niente pulsante
+  link:
+    - { nome: LinkedIn, url: "https://www.linkedin.com/in/edoardo-maglio-b419621a4" }
+    - { nome: IMDb, url: "https://www.imdb.com/name/nm12219557/" }
+    - { nome: GitHub, url: "https://github.com/EdoardoMaglio" }
+  scheda:                       # la piccola scheda tecnica in apertura
+    - { etichetta: Oggi, valore: "RedMoringa, Torino", da: 2025-07 }
+    - { etichetta: Base, valore: Torino · cresciuto in Val Chisone }
+    - { etichetta: Formazione, valore: "Ingegneria del Cinema e dei Media, Politecnico di Torino" }
+    - { etichetta: Lingue, valore: Italiano · English (B2) }
+  chi_sono: "Ingegnere del cinema e dei media, oggi Digital Marketing & AI Video Specialist in un'azienda di integratori a Torino. Vengo dal set (aiuto regia, montaggio, VFX) e dalla scrittura (racconti e poesie premiati a livello nazionale). Progetto giochi da tavolo, di carte e videogiochi. Sono cresciuto in Val Chisone, e la cultura occitana e alpina torna spesso in quello che scrivo e progetto."
+
+
+# ===== ESPERIENZE (dalla più recente) =====
+# Le prime tre compaiono anche in home, nel «Percorso».
+esperienze:
+  - ruolo: Digital Marketing & AI Video Specialist
+    azienda: RedMoringa
+    luogo: Torino
+    da: 2025-07
+    a: oggi
+    tipo: Apprendistato
+    punti:
+      - "Schede prodotto e SEO sui marketplace (Amazon Italia e Germania, Redcare) e sul sito Shopify."
+      - "TikTok Shop: gestione dell'account, creator e affiliazione, produzione video a volume con un sistema a più linee di contenuto."
+      - "Video AI in produzione: Veo e Google Flow, Sora, ComfyUI, ElevenLabs, automazioni n8n e Supabase; un flusso di post-produzione che unisce riprese reali e b-roll AI."
+      - Conformità EFSA dei claim sugli integratori.
+
+  - ruolo: Aiuto regia, project manager, digital specialist
+    azienda: Smart Factory
+    luogo: Torino
+    da: 2024-04
+    a: 2025-07
+    tipo: Stage + apprendistato
+    punti:
+      - Aiuto regia e segretario di edizione (continuity) per spot pubblicitari e video social.
+      - Project management e storyboard per marchi come Ferrero, Pininfarina, Argotec, Iveco, Marelli.
+      - Coordinamento tra squadre creative, tecniche e di produzione; documenti per gare e bandi.
+      - "AI specialist: storyboard e concept visivi con l'AI, ottimizzazione delle pipeline di produzione."
+
+  - ruolo: Editor, animazione 2D/3D, grafica e VFX
+    azienda: Little Bull
+    luogo: Torino
+    da: 2024-01
+    a: 2024-03
+    tipo: Freelance
+    punti:
+      - Post-produzione di contenuti pubblicitari e social per marchi come Matt, Tenderly, MediaWorld.
+      - Montaggio e motion graphics (After Effects, Blender, DaVinci Resolve), animazione 2D/3D e grafica (Illustrator), VFX.
+
+  - ruolo: Tirocinio
+    azienda: Bitpop Transmedia
+    luogo: ""
+    da: 2021-04
+    a: 2021-07
+    tipo: Tirocinio curricolare (laurea triennale)
+    punti:
+      - "Montaggio di video didattici per scuole medie ed elementari, riprese con stabilizzatore a San Germano Chisone, tutor di progetti scolastici, digital strategy."
+
+
+# ===== FORMAZIONE =====
+formazione:
+  - titolo: Laurea magistrale in Ingegneria del Cinema e dei Media
+    ente: Politecnico di Torino
+    da: 2021-09
+    a: 2023-12
+    nota: "Tesi: The STdouble2 Box Model. A Study on Human-Computer Interaction Applied to Game Design and Digital Strategies"
+  - titolo: Laurea triennale in Ingegneria del Cinema e dei Media
+    ente: Politecnico di Torino
+    da: 2018-09
+    a: 2021-09
+    nota: Matematica, programmazione, cinema, digital strategy, transmedia design.
+  - titolo: Cambridge English First (FCE), livello B2
+    ente: Cambridge Assessment English
+    da: 2018-02
+    a: 2018-05
+    nota: ""
+
+
+# ===== LINGUE E COMPETENZE =====
+lingue:
+  - { lingua: Italiano, livello: madrelingua }
+  - { lingua: Inglese, livello: B2, certificato: Cambridge English First (FCE) }
+
+competenze:
+  - gruppo: Video e AI generativa
+    voci: [Produzione video AI a volume, Prompt engineering per immagini e video, Coerenza dei personaggi, B-roll AI, Voice-over AI]
+    strumenti: [Veo / Google Flow, Sora, ComfyUI, ElevenLabs, ImageFX, Nano Banana]
+  - gruppo: Automazione e AI
+    voci: [Pipeline di contenuti, Agenti e workflow, Skill e prompt riutilizzabili]
+    strumenti: [n8n, Supabase, Claude e Claude Code, JSON strutturati]
+  - gruppo: Video e post-produzione
+    voci: [Regia, Aiuto regia, Montaggio, Motion graphics, Animazione 2D/3D, VFX, Storyboard]
+    strumenti: [DaVinci Resolve, After Effects, Premiere Pro, Pro Tools, Reaper, Blender, Illustrator]
+  - gruppo: E-commerce e performance
+    voci: [SEO marketplace, Schede prodotto, Amazon Ads, TikTok Shop, Creator e affiliazione, Ricerca keyword]
+    strumenti: [Amazon Seller Central, TikTok Shop, Mirakl, Shopify]
+  - gruppo: UX e prodotto
+    voci: [HCI, UX/UI, Prototipazione, Digital strategy, Transmedia]
+    strumenti: [Figma]
+  - gruppo: Game design
+    voci: [Regolamenti, Bilanciamento, Card design, Simulazioni, Playtest, GDD]
+    strumenti: [Godot 4 / GDScript, Unity, Excel]
+  - gruppo: Programmazione
+    voci: [Basi e prototipazione]
+    strumenti: [GDScript, C#, C++, Python, Jetpack Compose (Kotlin), Arduino]
+  - gruppo: Scrittura
+    voci: [Narrativa, Poesia, Sceneggiatura, Narrative design]
+    strumenti: []
+
+
+# ===== CATEGORIE DEI LAVORI =====
+# L'id diventa l'indirizzo del filtro: /lavori/video/, /lavori/giochi/, /lavori/digitale/
+categorie:
+  - id: video
+    nome: Video e AI
+    lettera: V
+    descrizione: "Corti, webserie, animazione, spot e produzione video con l'AI."
+  - id: giochi
+    nome: Giochi
+    lettera: G
+    descrizione: Videogiochi in Godot e Unity, giochi da tavolo e di carte.
+  - id: digitale
+    nome: Esperienze digitali
+    lettera: E
+    descrizione: App, UX, siti, strategia e transmedia.
+
+# Come si chiama ogni stato sul sito. «vivo» = quadratino rosso.
+stati:
+  online: { nome: Online, vivo: true }
+  in_uso: { nome: In uso, vivo: true }
+  concluso: { nome: Concluso }
+  in_sviluppo: { nome: In sviluppo }
+  in_testing: { nome: In testing }
+  prototipo: { nome: Prototipo giocabile }
+  concept: { nome: Concept }
+  fermo: { nome: Fermo }
+
+
+# ===== PROGETTI =====
+# L'ordine qui è l'ordine sul sito. Per spostare un progetto, sposta il suo blocco.
+#
+#   id:          nome breve, senza spazi: diventa l'indirizzo /lavori/<id>/
+#   categoria:   video | giochi | digitale
+#   sezione:     lavori (scheda completa) | scartati | archivio (riga compatta)
+#   in_evidenza: true per i progetti in home (da 0 a 4; solo online, in uso, conclusi o prototipo)
+#   visibile:    false nasconde il progetto ovunque, senza cancellarlo (se manca vale true)
+#   da / a:      periodo in anno-mese (2024-04); se c'è, il sito lo mostra al posto di «anno»
+#   immagine:    file in public/, per esempio img/reunion.jpg. Vuoto = copertina tipografica
+#   media:       video, PDF e gallerie mostrati dentro la pagina (vedi README)
+#   link:        pulsanti verso altri siti, con un'etichetta che dice dove portano
+#   riconoscimenti: selezioni e premi del progetto, una voce per ciascuno
+progetti:
+
+  # ----- Video e AI -----
+  - id: redmoringa
+    titolo: RedMoringa
+    categoria: video
+    sezione: lavori
+    in_evidenza: true
+    anno: dal 2025
+    ruolo: Pipeline video AI, sito, social
+    strumenti: [Veo, Sora, ComfyUI, ElevenLabs, n8n, Supabase, HyperFrames, Remotion]
+    stato: in_uso
+    testo: "Sistema di produzione video con l'AI, sito e social per un'azienda torinese di integratori e cosmetici. Raccontato solo come metodo."
+    immagine: ""
+    link:
+      - { etichetta: Visita il sito redmoringa.it, url: "https://redmoringa.it/" }
+      - { etichetta: Profilo Instagram, url: "https://www.instagram.com/redmoringa.it/" }
+      - { etichetta: Profilo TikTok, url: "https://www.tiktok.com/@redmoringa" }
+
+  - id: ideon
+    titolo: IDEON
+    visibile: false             # tolto dal sito il 12/11/2026: non compare da nessuna parte
+    categoria: video
+    sezione: lavori
+    in_evidenza: false
+    anno: 2024
+    ruolo: Scrittura, concept design, montaggio, sound design, generazione AI
+    strumenti: [Runway, CGDream, ElevenLabs, DaVinci Resolve]
+    stato: concluso
+    testo: "Spot satirico per un'agenzia creativa immaginaria, realizzato interamente con l'AI."
+    immagine: img/ideon.jpg     # file tolto da public/ il 12/11/2026: se IDEON torna visibile, va rimesso
+    alt: "Fotogramma generato con l'AI dallo spot IDEON: una donna dipinge su una tela in un campo al tramonto"
+    # Il video su Drive non esiste più (404). Quando c'è un link nuovo, aggiungilo in media.
+
+  - id: una-giornata-in-mensa
+    titolo: Una giornata in mensa
+    categoria: video
+    sezione: lavori
+    anno: ""
+    ruolo: Autore
+    strumenti: []
+    stato: concluso
+    testo: "Cortometraggio animato con l'AI."
+    immagine: media/una-giornata-in-mensa/una-giornata-in-mensa-01-poster.webp
+    media:
+      # importato da Drive il 2026-11-11: https://drive.google.com/file/d/1tkSQp6c0nfX601mmTBw4vGzPnVQd0aSv/view
+      - tipo: video
+        file: media/una-giornata-in-mensa/una-giornata-in-mensa-01.mp4
+        poster: media/una-giornata-in-mensa/una-giornata-in-mensa-01-poster.webp
+
+  - id: reunion
+    titolo: Reunion
+    categoria: video
+    sezione: lavori
+    in_evidenza: true
+    anno: 2022
+    ruolo: Sceneggiatura, regia, montaggio, post
+    strumenti: [GoPro 360, DaVinci Resolve, Reaper]
+    stato: online
+    testo: "Corto immersivo a 360° che mette lo spettatore al centro di uno stallo alla messicana."
+    immagine: img/reunion.jpg
+    alt: "Fotogramma di Reunion, corto a 360°"
+    media:
+      - tipo: youtube
+        id: FuSIzKZ6III
+        poster: img/reunion.jpg
+    link:
+      - { etichetta: Guarda a 360° su YouTube, url: "https://youtu.be/FuSIzKZ6III" }
+
+  - id: il-caso-110
+    titolo: Il caso 110
+    categoria: video
+    sezione: lavori
+    anno: 2023
+    ruolo: Sceneggiatura, regia, montaggio
+    strumenti: []
+    stato: online
+    testo: Giallo che smonta la struttura classica del whodunit.
+    immagine: ""
+    media:
+      - tipo: youtube
+        id: 5ulZvP_HbU4
+        poster: img/il-caso-110-poster.webp
+
+  - id: caviun
+    titolo: Caviun
+    categoria: video
+    sezione: lavori
+    anno: 2022
+    ruolo: Sceneggiatura, regia, montaggio
+    strumenti: []
+    stato: online
+    testo: Corto per la donazione del sangue con sei sezioni AVIS del Pinerolese.
+    immagine: ""
+    media:
+      - tipo: youtube
+        id: V_erO7d62y4
+        poster: img/caviun-poster.webp
+
+  - id: sconosciuto
+    titolo: Sconosciuto
+    categoria: video
+    sezione: lavori
+    anno: 2020
+    ruolo: Sceneggiatura, regia, montaggio, VFX
+    strumenti: []
+    stato: online
+    testo: Webserie in 8 episodi girata a San Germano Chisone.
+    immagine: ""
+    media:
+      - tipo: youtube
+        playlist: PLN9P76aCKWBat83eGfmQ-byXyh0JPnyIc
+        poster: img/sconosciuto-poster.webp
+
+  - id: bias
+    titolo: Bias
+    categoria: video
+    sezione: lavori
+    anno: 2018
+    ruolo: Sceneggiatura, regia, montaggio
+    strumenti: []
+    stato: online
+    testo: Un ragazzo sente i pensieri degli altri e, cercando di aiutare, peggiora le cose.
+    immagine: ""
+    media:
+      - tipo: youtube
+        id: Qls7thuF3p4
+        poster: img/bias-poster.webp
+
+  - id: manuale-completo-sulla-pallavolo
+    titolo: Manuale Completo sulla Pallavolo
+    categoria: video
+    sezione: lavori
+    in_evidenza: true
+    anno: 2026
+    ruolo: Sceneggiatura, regia, montaggio
+    strumenti: [DaVinci Resolve, Panasonic GH5, Sony Alpha 7 III]
+    stato: online
+    riconoscimenti: ["Official Selection – Lift-Off Global Network Sessions 2026"]
+    testo: "Una regista monta un film su una squadra di pallavolo per persone con disabilità e cerca la storia commovente. I giocatori le mostrano un'altra cosa: una squadra vera, che scherza, discute di tattica e vuole vincere."
+    immagine: img/manuale-completo-sulla-pallavolo.webp
+    alt: "Fotogramma del corto: la rete da pallavolo in palestra, un pallone in volo e il titolo «Manuale completo sulla pallavolo, a cura di Sport Inclusion»"
+    # Su YouTube il titolo è in inglese («Comprehensive Guide to Volleyball»); qui si usa quello italiano.
+    media:
+      - tipo: youtube
+        id: "2kq0ovLG3LI"
+        poster: img/manuale-completo-sulla-pallavolo.webp   # fotogramma scelto da Edoardo
+        miniatura: false        # la miniatura YouTube è la locandina in inglese: non usarla
+
+  - id: smart-factory
+    titolo: Smart Factory
+    categoria: video
+    sezione: lavori
+    in_evidenza: false
+    da: 2024-04
+    a: 2025-07
+    ruolo: Aiuto regia, project manager, storyboard, AI specialist
+    strumenti: []
+    stato: concluso
+    testo: Lavori in agenzia per clienti come Pininfarina, De Cecco, Argotec.
+    immagine: ""
+    link:
+      - { etichetta: Visita il sito di Smart Factory, url: "https://www.smart-factory.it/" }
+      - { etichetta: Canale Vimeo di Smart Factory, url: "https://vimeo.com/smartfactory" }
+    # Solo i nomi, senza link (fonte dei nomi: scheda Smart Factory su fctp.it).
+    # Confermato da Edoardo il 12/11/2026: Trentino Marketing (Val di Fassa) è un solo cliente; Acqua Eva era Smart Factory (2025).
+    clienti: [Argotec, Battaglio, Pininfarina, BiBanca, "ICE – Agenzia italiana per il commercio estero", Trentino Marketing (Val di Fassa), De Cecco, ETF, Ferrero, BCE, Cafker Productions, Marelli, Hub09, Iveco, ANCE, Acqua Eva]
+
+  - id: little-bull
+    titolo: Little Bull
+    categoria: video
+    sezione: lavori
+    anno: 2024
+    ruolo: Montaggio, motion
+    strumenti: []
+    stato: concluso
+    testo: "Lavori in agenzia: backstage, rimontaggi, animazione di un logo."
+    immagine: ""
+    clienti:
+      - nome: Tenderly, backstage «Tenera Tenderly»
+        periodo: ""
+        ruolo: Montaggio del backstage
+        link:
+          - { etichetta: Backstage su Facebook, url: "https://www.facebook.com/Tenderly.official/videos/tenderly-un-mondo-di-tenerezza-/971269201003016/" }
+      - nome: Matt, rimontaggio spot
+        periodo: ""
+        ruolo: Rimontaggio
+        link:
+          - { etichetta: Spot su YouTube, url: "https://www.youtube.com/watch?v=0j84KZk6rwQ" }
+      - nome: MediaWorld, animazione logo
+        periodo: ""
+        ruolo: Ridisegno dell'animazione
+        link: []
+
+  - id: storyboard
+    titolo: Storyboard
+    categoria: video
+    sezione: lavori
+    anno: 2024-2025
+    ruolo: Storyboard artist
+    strumenti: []
+    stato: concluso
+    testo: Tavole per spot e video.
+    immagine: ""
+
+  - id: lacrime-di-coccodrillo
+    titolo: Lacrime di Coccodrillo
+    categoria: video
+    sezione: lavori
+    anno: 2023
+    ruolo: Character design, concept, sfondi
+    strumenti: []
+    stato: concluso
+    testo: Corto animato in motion design.
+    immagine: media/lacrime-di-coccodrillo/lacrime-di-coccodrillo-01-poster.webp
+    media:
+      # importato da Drive il 2026-11-11: https://drive.google.com/file/d/17YK-q2PjEaxjvbBR4sW9VpoC8xKNtqml/view
+      - tipo: video
+        file: media/lacrime-di-coccodrillo/lacrime-di-coccodrillo-01.mp4
+        poster: media/lacrime-di-coccodrillo/lacrime-di-coccodrillo-01-poster.webp
+
+  - id: spot-mcdonalds
+    titolo: Spot McDonald's rifatto
+    categoria: video
+    sezione: lavori
+    anno: 2022
+    ruolo: Character design, animazione 3D
+    strumenti: []
+    stato: concluso
+    testo: Rifacimento in 3D di uno spot del 2016.
+    immagine: media/spot-mcdonalds/spot-mcdonalds-01-poster.webp
+    media:
+      # importato da Drive il 2026-11-11: https://drive.google.com/file/d/1PBxwDipopiyzbez04SiMKImn712LgTK1/view
+      - tipo: video
+        file: media/spot-mcdonalds/spot-mcdonalds-01.mp4
+        poster: media/spot-mcdonalds/spot-mcdonalds-01-poster.webp
+
+  - id: artdeco-futuristic-city
+    titolo: ArtDeco Futuristic City
+    categoria: video
+    sezione: lavori
+    anno: 2021
+    ruolo: Concept, modellazione 3D
+    strumenti: []
+    stato: concluso
+    testo: Città in Blender tra Art Déco, architettura araba e cyberpunk.
+    immagine: ""
+
+  # ----- Giochi -----
+  - id: eicrita
+    titolo: EICRITA
+    categoria: giochi
+    sezione: lavori
+    anno: 2026
+    ruolo: Game designer e sviluppatore
+    strumenti: []
+    stato: in_sviluppo
+    testo: Strategia astratta digitale per 2-4 giocatori, in Godot 4.
+    immagine: ""
+
+  - id: turntail
+    titolo: TURNTAIL
+    categoria: giochi
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: in_sviluppo
+    testo: "Metroidvania: uno scoiattolo contro un gatto, in Godot."
+    immagine: ""
+
+  - id: pawned
+    titolo: PAWNED
+    categoria: giochi
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: in_sviluppo
+    testo: Gioco di carte roguelike sul banco dei pegni del Diavolo.
+    immagine: ""
+
+  - id: dahu
+    titolo: DAHU
+    categoria: giochi
+    sezione: lavori
+    anno: 2026
+    ruolo: Game designer
+    strumenti: []
+    stato: in_testing
+    testo: Gioco da tavolo a movimento nascosto ambientato in Val Chisone.
+    immagine: ""
+
+  - id: dreamshifters
+    titolo: DreamShifters / Cromatica
+    categoria: giochi
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: in_sviluppo
+    testo: Gioco di carte collezionabili in sei colori; primi tre set completi.
+    immagine: ""
+
+  - id: videogioco-detective
+    titolo: Videogioco detective con AI
+    categoria: giochi
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: concept
+    testo: "Satira noir: l'AI del gioco si rompe in base a come la usi."
+    immagine: ""
+
+  - id: memories-of-beawood
+    titolo: Memories of Beawood
+    categoria: giochi
+    sezione: lavori
+    anno: 2025
+    ruolo: Lead game designer, level designer
+    strumenti: []
+    stato: fermo
+    testo: Horror psicologico in terza persona, con un team di 5 persone.
+    immagine: ""
+
+  - id: down-memory-lane
+    titolo: Down Memory Lane
+    categoria: giochi
+    sezione: lavori
+    anno: 2023
+    ruolo: Scrittura, game e level design
+    strumenti: [Unity]
+    stato: online
+    testo: Gioco narrativo sui ricordi frammentati, in Unity.
+    immagine: ""
+    media:
+      - tipo: youtube
+        id: 261290Dn5EY
+        poster: img/down-memory-lane-poster.webp
+    link:
+      - { etichetta: Gioca su itch.io, url: "https://albert230398.itch.io/down-memory-lane" }
+
+  - id: vrscouting
+    titolo: VRScouting
+    categoria: giochi
+    sezione: lavori
+    anno: 2022
+    ruolo: Scrittura, scripting, game design
+    strumenti: [Unity, Blender]
+    stato: online
+    testo: Esplorazione in prima persona di un bosco, in Unity.
+    immagine: ""
+    link:
+      - { etichetta: Gioca su itch.io, url: "https://scouters.itch.io/vrscouting" }
+
+  # Fonte: Rulebook_KIPO_con_spazi_immagini.docx (ago 2026). Ambientazione Kipuna e durata 20-25 minuti: Edoardo, 12/11/2026.
+  - id: kipo
+    titolo: KÌPO
+    categoria: giochi
+    sezione: lavori
+    in_evidenza: true
+    anno: dal 2024
+    ruolo: Game design
+    strumenti: []
+    stato: prototipo
+    testo: "Gioco astratto ambientato tra i Kipuna, civiltà immaginaria che usa nodi e corde come lingua, memoria e strumento di potere. Si piazzano pedine coperte su anelli concentrici, si rivelano per attivarne il potere e si formano catene per controllare lo spazio. 2 giocatori, dai 10 anni, 20-25 minuti."
+    immagine: img/kipo.webp
+    alt: "Copertina di KÌPO: il titolo giallo su un nodo di corde dorate, tra montagne, soli e un puma stilizzati"
+    media:
+      - tipo: galleria
+        immagini: [img/kipo-tavolo.webp, img/kipo-copertina.webp]
+        didascalie:
+          - "Il prototipo su Tabletopia: il tabellone ad anelli concentrici e le pedine KÌPO da scegliere"
+          - "Copertina di KÌPO: il titolo su un nodo di corde dorate, tra montagne, soli e un puma stilizzati"
+    link:
+      - { etichetta: Gioca su Tabletopia, url: "https://tabletopia.com/games/kipo-p4v1xc/play-now" }
+
+  # Fonte: Pitch Guide BABI&RAVE e KIPO (il regolamento ITA è solo immagini).
+  - id: babi-rave
+    titolo: BABI & RAVE
+    categoria: giochi
+    sezione: lavori
+    in_evidenza: false
+    anno: dal 2024
+    ruolo: Game design
+    strumenti: []
+    stato: prototipo
+    testo: "In uno stagno alpino nato dall'esplosione di una rapa gigante, le rane si sfidano a raccogliere le Rave nascoste sotto le tessere; alla fine alcune si rivelano esplosive. Gioco per famiglie di memoria e rischio: 2-8 giocatori, dai 5 anni, 15-25 minuti."
+    immagine: img/babi-rave.webp
+    alt: "Copertina di BABI & RAVE: il titolo su fondo verde, con una rapa viola e una rana che saluta"
+    media:
+      - tipo: galleria
+        immagini: [img/babi-rave-tavolo.webp, img/babi-rave-tessere.webp, img/babi-rave-copertina.webp]
+        didascalie:
+          - "Il prototipo su Tabletopia: lo stagno 4x4 circondato dalle tessere di partenza"
+          - "Le tessere del gioco: rave colorate, rane esploratrici e ladre, il luccio, il retino e le onde"
+          - "Copertina di BABI & RAVE: rane, rape e un luccio su fondo verde"
+    link:
+      - { etichetta: Gioca su Tabletopia, url: "https://tabletopia.com/games/babi-rave-73ec6i/play-now" }
+
+  # ----- Esperienze digitali -----
+  - id: sito-us-sangermanese
+    titolo: Sito U.S. Sangermanese
+    categoria: digitale
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: in_sviluppo
+    testo: "Sito per l'associazione sportiva di San Germano Chisone."
+    immagine: ""
+
+  - id: app-produttivita
+    titolo: App di produttività
+    categoria: digitale
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: in_sviluppo
+    testo: App Android con Pomodoro, matrice di Eisenhower e premortem.
+    immagine: ""
+
+  - id: pdf-suite-app
+    titolo: PDF Suite App
+    categoria: digitale
+    sezione: lavori
+    anno: 2026
+    ruolo: ""
+    strumenti: []
+    stato: in_sviluppo
+    testo: App desktop per gestire i PDF.
+    immagine: ""
+
+  - id: stdouble2-box-model
+    titolo: The STdouble2 Box Model
+    categoria: digitale
+    sezione: lavori
+    anno: 2023
+    ruolo: Autore (tesi magistrale)
+    strumenti: []
+    stato: concluso
+    testo: Modello per comunicare in modo coerente con il proprio pubblico.
+    immagine: ""
+    link:
+      - { etichetta: Visita il sito della tesi, url: "https://raccont7.wixsite.com/raccont7" }
+
+  - id: phoneward
+    titolo: Phoneward
+    categoria: digitale
+    sezione: lavori
+    anno: 2023
+    ruolo: Programmazione, design in Figma
+    strumenti: [Figma]
+    stato: concluso
+    testo: App per ridurre la dipendenza da smartphone negli studenti.
+    immagine: ""
+    link:
+      - { etichetta: Apri il prototipo in Figma, url: "https://www.figma.com/proto/r0Eev3fmhQmSpJFXU64mja/Medium-Fidelity-Prototype" }
+
+  - id: climaction
+    titolo: ClimAction
+    categoria: digitale
+    sezione: lavori
+    anno: 2023
+    ruolo: Design, game design, Arduino
+    strumenti: [Arduino, Android Studio, Firebase]
+    stato: concluso
+    testo: "Gioco educativo sull'efficienza energetica, con una casa Arduino."
+    immagine: media/climaction/climaction-01-p1.webp
+    media:
+      # importato da Drive il 2026-11-11: https://drive.google.com/file/d/1tvKEUikvKLbP-X4jLzx5v_NXRThJpQpQ/view
+      - tipo: pdf
+        file: media/climaction/climaction-01.pdf
+        anteprima: media/climaction/climaction-01-p1.webp
+        etichetta: Leggi il progetto ClimAction (PDF)
+
+  - id: wibo
+    titolo: Digital Strategy per Wibo
+    categoria: digitale
+    sezione: lavori
+    anno: 2023
+    ruolo: "Progetto di gruppo · mio ruolo: designer, digital strategist"
+    strumenti: []
+    stato: concluso
+    testo: "Analisi della comunicazione di Wibo e dei concorrenti, con raccomandazioni."
+    immagine: media/wibo/wibo-01-p1.webp
+    media:
+      # importato da Drive il 2026-11-11: https://drive.google.com/drive/folders/1r7_EsxUXeTDH1Xy0wiCGeIia14vliatp
+      # I PDF pubblicati non hanno la copertina con i nomi del gruppo.
+      # Estratto dello studio di settore (494 pagine): p. 2-3, 487-494, approvate il 12/11/2026.
+      - tipo: pdf
+        file: media/wibo/wibo-03.pdf
+        anteprima: media/wibo/wibo-03-p1.webp
+        etichetta: "Studio di settore: best & worst practices e conclusioni (PDF)"
+      - tipo: pdf
+        file: media/wibo/wibo-01.pdf
+        anteprima: media/wibo/wibo-01-p1.webp
+        etichetta: Competitor e comparables (PDF)
+      - tipo: pdf
+        file: media/wibo/wibo-02.pdf
+        anteprima: media/wibo/wibo-02-p1.webp
+        etichetta: Desiderata (PDF)
+
+  - id: aliensarecoming
+    titolo: AliensAreComing
+    categoria: digitale
+    sezione: lavori
+    in_evidenza: false
+    anno: 2021
+    ruolo: Scrittura, transmedia design
+    strumenti: [Klynt]
+    stato: concluso
+    testo: "Alternate reality game promozionale per il MUFANT, il Museo del Fantastico e della Fantascienza di Torino."
+    immagine: img/aliens.jpg
+    alt: "Schermata del titolo di Aliens are coming, alternate reality game, su sfondo viola con pianeti"
+    media:
+      # importato da Drive il 2026-11-11: https://drive.google.com/drive/folders/1FEoOq2S5GHtrwLXqhiU7pvL4X6yJ0DOC
+      - tipo: pdf
+        file: media/aliensarecoming/aliensarecoming-03.pdf
+        anteprima: media/aliensarecoming/aliensarecoming-03-p1.webp
+        etichetta: "Presentazione dell'ARG (PDF)"
+      - tipo: pdf
+        file: media/aliensarecoming/aliensarecoming-04.pdf
+        anteprima: media/aliensarecoming/aliensarecoming-04-p1.webp
+        etichetta: "Struttura dell'esperienza (PDF)"
+      - tipo: pdf
+        file: media/aliensarecoming/aliensarecoming-05.pdf
+        anteprima: media/aliensarecoming/aliensarecoming-05-p1.webp
+        etichetta: "Schede dei contenuti (PDF)"
+      - tipo: pdf
+        file: media/aliensarecoming/aliensarecoming-01.pdf
+        anteprima: media/aliensarecoming/aliensarecoming-01-p1.webp
+        etichetta: "Mappa del piano editoriale (PDF)"
+      - tipo: pdf
+        file: media/aliensarecoming/aliensarecoming-02.pdf
+        anteprima: media/aliensarecoming/aliensarecoming-02-p1.webp
+        etichetta: "Mappa delle piattaforme, versione rivista (PDF)"
+
+  # ----- Giochi scartati (riga compatta) -----
+  - id: wrestling-wreckage
+    titolo: Wrestling Wreckage
+    categoria: giochi
+    sezione: scartati
+    anno: dal 2024
+    testo: Party game di carte per 3-8 giocatori sul wrestling assurdo.
+
+  - id: fast
+    titolo: FAST
+    categoria: giochi
+    sezione: scartati
+    anno: dal 2024
+    testo: Gioco di carte veloce per famiglie sulla fretta della vita moderna.
+
+  - id: circvs
+    titolo: CIRCVS
+    categoria: giochi
+    sezione: scartati
+    anno: dal 2024
+    testo: "Carte collezionabili su un campo circolare ispirato all'antica Roma."
+
+  - id: ai-conic-collectors
+    titolo: AI-CONIC COLLECTORS
+    categoria: giochi
+    sezione: scartati
+    anno: dal 2024
+    testo: "Gioco satirico di aste e collezionismo di arte generata dall'AI."
+
+  # ----- Archivio (riga compatta) -----
+  - { id: encaster-entremat, titolo: ENCASTER / ENTREMAT, categoria: giochi, sezione: archivio, anno: dal 2024, testo: "" }
+
+
+# ===== PREMI E PUBBLICAZIONI =====
+# Fonte: CONCORSI LETTERATURA.xlsx (MATERIALE CV)
+premi:
+  - premio: Premio Letterario Nazionale «Umberto Fracchia»
+    edizione: V edizione, sezione giovani
+    risultato: 1° posto
+    opera: Il Festival dei Plagiatori
+    anno: 2025
+    url: ""
+  - premio: Premio Letterario Quinto Vicentino «Villa Thiene»
+    edizione: sezione giovani
+    risultato: 1° posto
+    opera: Manuale Galattico per Prendersi Cura del Nonno (e della Terra)
+    anno: 2025
+    url: ""
+  - premio: Premio Roddi
+    edizione: XXX edizione · menzione di Roberto Vecchioni
+    risultato: 3° posto
+    opera: Lingua di Pane, Lingua di Madre
+    anno: 2025
+    url: ""
+  - premio: L'Infiorata Artistica
+    edizione: IV edizione
+    risultato: 1° posto
+    opera: Sapore di Calendula
+    anno: 2025
+    url: ""
+  - premio: Concorso di Poesia in memoria di Gianni Tulisso
+    edizione: I edizione
+    risultato: 1° posto
+    opera: Altitudine Minima Garantita
+    anno: 2025
+    url: ""
+  - premio: Premio Da Ponte Giovani
+    edizione: II edizione
+    risultato: 3° posto
+    opera: La Zuppa di Mio Padre
+    anno: 2025
+    url: ""
+  - premio: Scritture di Lago
+    edizione: VI edizione
+    risultato: 3° posto
+    opera: Le Ossa del Pesce Persico
+    anno: 2025
+    url: ""
+  - premio: Premio Tesori della Natura
+    edizione: V edizione
+    risultato: 1° posto
+    opera: Il Lamento del Sasso
+    anno: 2025
+    url: ""
+  - premio: Delitti in Radio
+    edizione: Lettura del racconto in radio
+    risultato: Vincitore
+    opera: Il Club della Zuppa del Martedì
+    anno: 2025
+    url: ""
+  - premio: Premio Giulio Angioni
+    edizione: IX edizione
+    risultato: Finalista
+    opera: Quattro Galline e un Sindaco
+    anno: 2025
+    url: ""
+  - premio: Storie da Museo
+    edizione: ""
+    risultato: Segnalato
+    opera: Il telaio che sogna       # risultato già uscito: si può mostrare
+    anno: 2025
+    url: ""
+
+# Una voce con solo «testo» diventa una riga libera. «Connessioni Impossibili» escluso (12/11/2026).
+pubblicazioni:
+  - { titolo: Per Adesso è Abbastanza, tipo: romanzo, editore: Edizioni TriplaE, anno: "", url: "" }
+  - { testo: "Racconti pubblicati in antologie di Historica Edizioni e Rudis Edizioni (2025)" }
+  - { titolo: Verso una Cultura Generativa, tipo: saggio, raccolta: Idee e proposte per la cultura italiana, editore: Historica Edizioni, anno: 2025, url: "" }
+
+# Solo titolo e una riga: mai il testo completo (molti concorsi chiedono testi inediti).
+sceneggiature:
+  - { titolo: "The Magpie's Leap", testo: "Sceneggiatura di lungometraggio su un giovane aspirante regista, in adattamento a romanzo." }
+  - { titolo: Commedia corale, testo: "Lungometraggio in una sola location: un comitato di paese deve dare il nome a un cinema." }
+
+racconti:
+  # concorso = cartella in cui si trova il testo (Desktop/PARA). Tutti nascosti finché Edoardo non conferma
+  # quali sono in concorsi con giudizio anonimo: per mostrarne uno, metti visibile: true.
+  - { titolo: "Faire la Duana", concorso: "NUVOLE DI CARTA", testo: "", visibile: false }
+  - { titolo: "La Lingua dei Morti", concorso: "GIALLO FOSSANO", testo: "", visibile: false }
+  - { titolo: "Approvato con tagli", concorso: "CARLO LORENZINI", testo: "", visibile: false }
+  - { titolo: "L'inventario delle cose che non esistono ancora", concorso: "ANTIQUARIO", testo: "", visibile: false }
+  - { titolo: "La riunione del giovedì sera", concorso: "Premio Troisi", testo: "", visibile: false }
+  - { titolo: "La Muletta", concorso: "MONFERRATO 2026", testo: "", visibile: false }
+  - { titolo: "L'almanacco delle masche", concorso: "NEO-GOTICO", testo: "", visibile: false }
+
+
+# ===== TESTI DELL'INTERFACCIA =====
+# Le parole fisse del sito: menu, titoli delle sezioni, pulsanti.
+# {n}, {titolo}, {anno} vengono sostituiti dal sito.
+testi:
+  menu:
+    - { nome: Lavori, url: /lavori/ }
+    - { nome: Chi sono, url: /chi-sono/ }
+    - { nome: Scrittura, url: /scrittura/ }
+    - { nome: Contatti, url: /contatti/ }
+  salta: Salta al contenuto
+  menu_etichetta: Principale
+  tema_scuro: Tema scuro
+  tema_chiaro: Tema chiaro
+  tema_scuro_suggerimento: Spegni le luci
+  tema_chiaro_suggerimento: Luce in sala
+  vedi_lavori: Vedi i lavori
+  scarica_cv: Scarica il CV (PDF)
+  contatti_etichetta: Contatti
+  oggi: oggi
+  dal: dal
+  mesi: [gen, feb, mar, apr, mag, giu, lug, ago, set, ott, nov, dic]
+
+  home_cosa_faccio: Cosa faccio
+  home_tutti_n: "Tutti i {n} lavori"
+  home_n_lavori: "{n} lavori"
+  home_in_evidenza: In evidenza
+  home_tutti: Tutti i lavori
+  home_premi: Premi letterari
+  home_racconti: Racconti e sceneggiature
+  home_percorso: Percorso
+  home_chi_sono: Eccomi
+
+  scheda_anno: Anno
+  scheda_ruolo: Ruolo
+  scheda_strumenti: Strumenti
+  scheda_stato: Stato
+  scheda_riconoscimenti: Riconoscimenti
+  scheda_progetto: Scheda del progetto
+  copertina: Copertina tipografica
+
+  riproduci: "Riproduci {titolo}"
+  riproduci_dove: "si carica da YouTube"
+  nota_youtube: Il video si carica da YouTube solo quando premi Riproduci.
+  pdf_apri: Leggi il documento (PDF)
+  galleria_titolo: Immagini
+  galleria_ingrandisci: "Ingrandisci l'immagine {n}"
+  chiudi: Chiudi
+
+  lavori_titolo: Lavori
+  lavori_intro: "{n} progetti tra video, giochi ed esperienze digitali. Scegli una categoria per vedere solo quella."
+  lavori_tutti: Tutti
+  lavori_filtri: Filtra per categoria
+  lavori_scartati: Giochi scartati
+  lavori_archivio: Archivio
+  lavori_torna: Tutti i lavori
+  progetto_media: Materiale
+  progetto_link: Link
+  progetto_clienti: Clienti e progetti
+  progetto_clienti_elenco: Clienti
+  clienti_nome: Cliente
+  clienti_periodo: Periodo
+  clienti_ruolo: Ruolo
+  clienti_link: Link
+
+  premi_anno: Anno
+  premi_premio: Premio
+  premi_risultato: Risultato
+  premi_opera: Opera
+  premi_fonte: Fonte
+  premi_fonte_link: Bando o esito
+  pubblicazioni: Pubblicazioni
+
+  chi_sono_titolo: Chi sono
+  chi_sono_esperienze: Esperienze
+  chi_sono_formazione: Formazione
+  chi_sono_lingue: Lingue
+  chi_sono_competenze: Competenze
+  scrittura_titolo: Scrittura
+  scrittura_sceneggiature: Sceneggiature
+  scrittura_racconti: Racconti
+  scrittura_racconti_nota: Solo titoli. I testi sono in concorso o in lavorazione.
+  contatti_titolo: Contatti
+  contatti_intro: Scrivimi per lavoro, collaborazioni o per vedere un progetto da vicino.
+  contatti_cv: Curriculum
+
+  pagina_404_titolo: Pagina non trovata
+  pagina_404_testo: Questo indirizzo non esiste, o il progetto ha cambiato nome.
+  pagina_404_link: Torna alla home
+
+  footer: "© {anno} Edoardo Maglio · 0 cookie · 0 tracker"
+  footer_email: Email

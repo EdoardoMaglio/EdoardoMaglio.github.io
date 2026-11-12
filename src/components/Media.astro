@@ -1,0 +1,32 @@
+---
+// Il materiale di un progetto, mostrato dentro la pagina nel modo giusto per il tipo di file.
+import Youtube from './Youtube.astro';
+import { src, t, testo, pieno, type Progetto } from '../lib/sito';
+interface Props { p: Progetto }
+const { p } = Astro.props;
+const media = p.media ?? [];
+---
+<div class="blocco-media">
+  {media.map((m: any) => {
+    if (m.tipo === 'youtube') return <Youtube id={m.id} playlist={m.playlist} poster={m.poster} titolo={p.titolo} p={p} />;
+    if (m.tipo === 'video') return (
+      <video controls preload="none" playsinline poster={pieno(m.poster) ? src(m.poster) : undefined} src={src(m.file)}></video>
+    );
+    if (m.tipo === 'pdf') return (
+      <div class="pdf">
+        {pieno(m.anteprima) && <a href={src(m.file)}><img src={src(m.anteprima)} alt="" loading="lazy" decoding="async"></a>}
+        <div class="azioni"><a class="btn primario" href={src(m.file)}>{pieno(m.etichetta) ? m.etichetta : t.pdf_apri}</a></div>
+      </div>
+    );
+    if (m.tipo === 'galleria') return (
+      <ul class="galleria">
+        {m.immagini.map((f: string, i: number) => (
+          <li><a href={src(f)} aria-label={testo('galleria_ingrandisci', { n: i + 1 })}>
+            <img src={src(f)} alt={pieno(m.didascalie?.[i]) ? m.didascalie[i] : `${p.titolo}, ${i + 1}`} loading="lazy" decoding="async">
+          </a></li>
+        ))}
+      </ul>
+    );
+    return null;
+  })}
+</div>

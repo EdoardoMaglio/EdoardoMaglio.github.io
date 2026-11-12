@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import { sito, t, pieno, periodo, voci } from '../lib/sito';
+const p = sito.profilo;
+const esperienze = sito.esperienze ?? [];
+const formazione = sito.formazione ?? [];
+const lingue = sito.lingue ?? [];
+const competenze = sito.competenze ?? [];
+---
+<Base titolo={t.chi_sono_titolo} attivo="/chi-sono/">
+  <div class="pagina-testa">
+    <h1>{t.chi_sono_titolo}</h1>
+    {pieno(p.chi_sono) && <p>{p.chi_sono}</p>}
+  </div>
+
+  {esperienze.length > 0 && (
+    <section aria-labelledby="h-esp">
+      <div class="testa-sez"><h2 id="h-esp">{t.chi_sono_esperienze}</h2></div>
+      <ol class="esperienze" reversed>
+        {esperienze.map((e: any) => (
+          <li>
+            <span class="date">{periodo(e.da, e.a)}</span>
+            <div>
+              <h3>{e.ruolo}</h3>
+              <p class="dove">{[e.azienda, e.luogo, e.tipo].filter(pieno).join(' · ')}</p>
+              {voci(e.punti).length > 0 && <ul>{voci(e.punti).map((x) => <li>{x}</li>)}</ul>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  {formazione.length > 0 && (
+    <section aria-labelledby="h-form">
+      <div class="testa-sez"><h2 id="h-form">{t.chi_sono_formazione}</h2></div>
+      <ol class="esperienze" reversed>
+        {formazione.map((f: any) => (
+          <li>
+            <span class="date">{periodo(f.da, f.a)}</span>
+            <div>
+              <h3>{f.titolo}</h3>
+              <p class="dove">{f.ente}</p>
+              {pieno(f.nota) && <p class="nota">{f.nota}</p>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  {lingue.length > 0 && (
+    <section aria-labelledby="h-lingue">
+      <div class="testa-sez"><h2 id="h-lingue">{t.chi_sono_lingue}</h2></div>
+      <dl class="scheda">
+        {lingue.map((l: any) => <><dt>{l.lingua}</dt><dd>{[l.livello, l.certificato].filter(pieno).join(' · ')}</dd></>)}
+      </dl>
+    </section>
+  )}
+
+  {competenze.length > 0 && (
+    <section aria-labelledby="h-comp">
+      <div class="testa-sez"><h2 id="h-comp">{t.chi_sono_competenze}</h2></div>
+      <dl class="competenze">
+        {competenze.map((c: any) => (
+          <div>
+            <dt>{c.gruppo}</dt>
+            {voci(c.voci).length > 0 && <dd>{voci(c.voci).join(', ')}</dd>}
+            {voci(c.strumenti).length > 0 && <dd class="strumenti">{voci(c.strumenti).join(' · ')}</dd>}
+          </div>
+        ))}
+      </dl>
+    </section>
+  )}
+</Base>

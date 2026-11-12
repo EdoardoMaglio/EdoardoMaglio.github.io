@@ -1,40 +1,71 @@
 ---
-// Pagina provvisoria della fase 1: serve solo a verificare build e deploy.
+import Base from '../layouts/Base.astro';
+import CardEvidenza from '../components/CardEvidenza.astro';
+import Premi from '../components/Premi.astro';
+import { sito, t, testo, pieno, data, periodo, src, categorie, lavori, perCategoria, inEvidenza, premi } from '../lib/sito';
+const p = sito.profilo;
+const percorso = (sito.esperienze ?? []).slice(0, 3);
 ---
+<Base>
+  <!-- 1. APERTURA -->
+  <div class="apertura">
+    <div>
+      <h1>{p.nome}</h1>
+      <p class="ruolo">{p.titolo}</p>
+      <p class="lead">{p.presentazione}</p>
+      <div class="azioni">
+        <a class="btn primario" href="/lavori/">{t.vedi_lavori}</a>
+        {pieno(p.cv_pdf) && <a class="btn" href={src(p.cv_pdf)}>{t.scarica_cv}</a>}
+      </div>
+      <ul class="contatti" aria-label={t.contatti_etichetta}>
+        <li><a href={`mailto:${p.email}`}>{p.email}</a></li>
+        {p.link.filter((l: any) => pieno(l.url)).map((l: any) => <li><a href={l.url}>{l.nome}</a></li>)}
+      </ul>
+    </div>
+    <dl class="scheda">
+      {p.scheda.filter((r: any) => pieno(r.valore)).map((r: any) => (
+        <><dt>{r.etichetta}</dt><dd>{r.valore}{pieno(r.da) && ` · ${t.dal} ${data(r.da)}`}</dd></>
+      ))}
+    </dl>
+  </div>
 
-<!doctype html>
-<html lang="it">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="robots" content="noindex" />
-		<title>Edoardo Maglio — sito in costruzione</title>
-		<style>
-			body {
-				margin: 0;
-				min-height: 100vh;
-				display: grid;
-				place-content: center;
-				padding: 1.5rem;
-				font-family: system-ui, sans-serif;
-				line-height: 1.5;
-				color: #1a1a1a;
-				background: #fafaf7;
-			}
-			@media (prefers-color-scheme: dark) {
-				body { color: #ededea; background: #141414; }
-			}
-			h1 { margin: 0 0 0.25rem; font-size: clamp(2rem, 6vw, 3.5rem); }
-			p { margin: 0; max-width: 40ch; }
-		</style>
-	</head>
-	<body>
-		<main>
-			<h1>Edoardo Maglio</h1>
-			<p>Creative Technologist &amp; AI Video Specialist.</p>
-			<p>Il sito è in costruzione.</p>
-		</main>
-	</body>
-</html>
+  <!-- 2. COSA FACCIO -->
+  <section aria-labelledby="h-cosa">
+    <div class="testa-sez"><h2 id="h-cosa">{t.home_cosa_faccio}</h2><a href="/lavori/">{testo('home_tutti_n', { n: lavori.length })}</a></div>
+    <ul class="ingressi">
+      {categorie.map((c) => (
+        <li><a href={`/lavori/${c.id}/`}><span class="let" aria-hidden="true">{c.lettera}</span><h3>{c.nome}</h3><span class="desc">{c.descrizione}</span><span class="num">{testo('home_n_lavori', { n: perCategoria(c.id).length })}</span></a></li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- 3. IN EVIDENZA -->
+  {inEvidenza.length > 0 && (
+    <section id="evidenza" aria-labelledby="h-evid">
+      <div class="testa-sez"><h2 id="h-evid">{t.home_in_evidenza}</h2><a href="/lavori/">{t.home_tutti}</a></div>
+      <div class="lavori">
+        {inEvidenza.map((x) => <CardEvidenza p={x} />)}
+      </div>
+    </section>
+  )}
+
+  <!-- 4. PREMI LETTERARI -->
+  {premi.length > 0 && (
+    <section id="premi" aria-labelledby="h-premi">
+      <div class="testa-sez"><h2 id="h-premi">{t.home_premi}</h2><a href="/scrittura/">{t.home_racconti}</a></div>
+      <Premi />
+    </section>
+  )}
+
+  <!-- 5. PERCORSO -->
+  {percorso.length > 0 && (
+    <section id="percorso" aria-labelledby="h-perc">
+      <div class="testa-sez"><h2 id="h-perc">{t.home_percorso}</h2><a href="/chi-sono/">{t.home_chi_sono}</a></div>
+      <ol class="percorso" reversed>
+        {percorso.map((e: any) => (
+          <li><span class="date">{periodo(e.da, e.a)}</span><span><span class="chi">{e.azienda}</span> · {e.ruolo}</span></li>
+        ))}
+      </ol>
+    </section>
+  )}
+</Base>

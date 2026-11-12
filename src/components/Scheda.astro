@@ -1,0 +1,17 @@
+---
+// Scheda tecnica: sempre Anno · Ruolo · [Strumenti] · Stato · [Riconoscimenti], nello stesso ordine.
+// I campi vuoti non compaiono.
+import { t, quando, stato, voci, pieno, type Progetto } from '../lib/sito';
+interface Props { p: Progetto; strumenti?: boolean }
+const { p, strumenti = true } = Astro.props;
+const s = stato(p.stato);
+const st = voci(p.strumenti);
+const ric = voci((p as any).riconoscimenti);
+---
+<dl class="scheda">
+  {pieno(quando(p)) && <><dt>{t.scheda_anno}</dt><dd>{quando(p)}</dd></>}
+  {pieno(p.ruolo) && <><dt>{t.scheda_ruolo}</dt><dd>{p.ruolo}</dd></>}
+  {strumenti && st.length > 0 && <><dt>{t.scheda_strumenti}</dt><dd>{st.join(', ')}</dd></>}
+  {s && <><dt>{t.scheda_stato}</dt><dd><span class={s.vivo ? 'stato vivo' : 'stato'}>{s.nome}</span></dd></>}
+  {ric.length > 0 && <><dt>{t.scheda_riconoscimenti}</dt><dd>{ric.join(' · ')}</dd></>}
+</dl>

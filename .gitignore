@@ -24,3 +24,7 @@ desktop.ini
 !.vscode/extensions.json
 !.vscode/settings.json
 .idea/
+
+# Scaricamenti di importa_drive.py (file originali, possono contenere dati personali)
+.importa/
+__pycache__/

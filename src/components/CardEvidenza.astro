@@ -1,0 +1,24 @@
+---
+// Progetto in evidenza (home): media a sinistra, scheda a destra.
+import Copertina from './Copertina.astro';
+import Youtube from './Youtube.astro';
+import Scheda from './Scheda.astro';
+import Pulsanti from './Pulsanti.astro';
+import { copertina, src, pieno, type Progetto } from '../lib/sito';
+interface Props { p: Progetto }
+const { p } = Astro.props;
+const yt = (p.media ?? []).find((m) => m.tipo === 'youtube') as any;
+const img = copertina(p);
+const url = `/lavori/${p.id}/`;
+---
+<article class="lavoro" aria-labelledby={`t-${p.id}`}>
+  {yt ? <Youtube id={yt.id} playlist={yt.playlist} poster={yt.poster || img} titolo={p.titolo} p={p} />
+    : pieno(img) ? <div><div class="media"><img src={src(img)} alt={p.alt ?? ''} loading="lazy" decoding="async"></div></div>
+    : <div><Copertina p={p} /></div>}
+  <div class="testo">
+    <h3 id={`t-${p.id}`}><a href={url}>{p.titolo}</a></h3>
+    {pieno(p.testo) && <p class="riga">{p.testo}</p>}
+    <Scheda p={p} />
+    <Pulsanti link={p.link} scheda={url} />
+  </div>
+</article>

@@ -1,0 +1,27 @@
+---
+// Pagina Lavori: Tutti oppure una categoria. Ogni filtro è una pagina vera, quindi funziona senza JavaScript.
+import CardGriglia from './CardGriglia.astro';
+import Compatte from './Compatte.astro';
+import { t, testo, categorie, lavori, perCategoria, scartati, archivio } from '../lib/sito';
+interface Props { filtro?: string }
+const { filtro } = Astro.props;
+const voci = filtro ? perCategoria(filtro) : lavori;
+const conRighe = !filtro || filtro === 'giochi';
+---
+<section aria-labelledby="h-lavori" style="margin-top:clamp(1.5rem,1rem + 3vw,3rem)">
+  <h1 id="h-lavori" style="font-size:var(--t-2xl)">{t.lavori_titolo}</h1>
+  <p class="intro">{testo('lavori_intro', { n: lavori.length })}</p>
+  <nav class="filtri" aria-label={t.lavori_filtri} style="margin-top:1.25rem">
+    <ul>
+      <li><a href="/lavori/" aria-current={!filtro ? 'page' : undefined}>{t.lavori_tutti} <span class="n">{lavori.length}</span></a></li>
+      {categorie.map((c) => (
+        <li><a href={`/lavori/${c.id}/`} aria-current={filtro === c.id ? 'page' : undefined}>{c.nome} <span class="n">{perCategoria(c.id).length}</span></a></li>
+      ))}
+    </ul>
+  </nav>
+  <ul class="griglia">
+    {voci.map((p) => <CardGriglia p={p} />)}
+  </ul>
+</section>
+{conRighe && <Compatte titolo={t.lavori_scartati} id="h-scartati" voci={scartati} />}
+{conRighe && <Compatte titolo={t.lavori_archivio} id="h-archivio" voci={archivio} />}
