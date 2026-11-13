@@ -112,6 +112,8 @@ section { margin-block: clamp(2.5rem, 2rem + 3vw, 4.5rem); }
 .play img { width: 100%; height: 100%; object-fit: cover; }
 .play .play-lab { position: absolute; left: 1rem; bottom: 1rem; display: inline-flex; align-items: center; gap: .55rem; min-height: 2.75rem; padding: .4rem 1rem; background: var(--accent); font: 700 var(--t-m) var(--sans); }
 .play .tri { width: 0; height: 0; border-left: .75em solid currentColor; border-top: .45em solid transparent; border-bottom: .45em solid transparent; }
+/* .play è un link: la regola generale a:hover lo farebbe rosso su rosso */
+.play:hover, .play:focus-visible { color: var(--on-accent); }
 .play:hover .play-lab, .play:focus-visible .play-lab { text-decoration: underline; }
 .play:focus-visible { outline-offset: -5px; }
 .nota-media { margin: .45rem 0 0; font-size: var(--t-s); color: var(--muted); }
