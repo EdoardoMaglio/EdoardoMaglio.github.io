@@ -217,10 +217,11 @@ progetti:
     testo: "Cortometraggio animato con l'AI."
     immagine: media/una-giornata-in-mensa/una-giornata-in-mensa-01-poster.webp
     media:
-      # importato da Drive il 2026-11-11: https://drive.google.com/file/d/1tkSQp6c0nfX601mmTBw4vGzPnVQd0aSv/view
-      - tipo: video
-        file: media/una-giornata-in-mensa/una-giornata-in-mensa-01.mp4
+      # su YouTube «non in elenco» dal 13/11/2026 (prima: video ospitato, da Drive 1tkSQp6c0nfX601mmTBw4vGzPnVQd0aSv)
+      - tipo: youtube
+        id: xNLBgd353TI
         poster: media/una-giornata-in-mensa/una-giornata-in-mensa-01-poster.webp
+        miniatura: false
 
   - id: reunion
     titolo: Reunion
@@ -404,10 +405,11 @@ progetti:
     testo: Rifacimento in 3D di uno spot del 2016.
     immagine: media/spot-mcdonalds/spot-mcdonalds-01-poster.webp
     media:
-      # importato da Drive il 2026-11-11: https://drive.google.com/file/d/1PBxwDipopiyzbez04SiMKImn712LgTK1/view
-      - tipo: video
-        file: media/spot-mcdonalds/spot-mcdonalds-01.mp4
+      # su YouTube «non in elenco» dal 13/11/2026 (prima: video ospitato, da Drive 1PBxwDipopiyzbez04SiMKImn712LgTK1)
+      - tipo: youtube
+        id: xhGRWcau_wQ
         poster: media/spot-mcdonalds/spot-mcdonalds-01-poster.webp
+        miniatura: false
 
   - id: artdeco-futuristic-city
     titolo: ArtDeco Futuristic City
