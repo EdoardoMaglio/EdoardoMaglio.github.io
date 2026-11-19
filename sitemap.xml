@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://edoardomaglio.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/video/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/video/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/video/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/video/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/video/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/video/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/video/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/video/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/video/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/video/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/video/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/video/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/giochi/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/giochi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/games/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/jeux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/giochi/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/games/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/giochi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/games/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/jeux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/giochi/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/jeux/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/giochi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/games/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/jeux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/giochi/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/digitale/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/digitale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/digital/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/numerique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/digitale/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/digital/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/digitale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/digital/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/numerique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/digitale/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/numerique/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/digitale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/digital/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/numerique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/digitale/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/redmoringa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/redmoringa/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/redmoringa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/redmoringa/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/redmoringa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/redmoringa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/redmoringa/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/una-giornata-in-mensa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/una-giornata-in-mensa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/una-giornata-in-mensa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/una-giornata-in-mensa/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/reunion/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/reunion/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/reunion/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/reunion/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/reunion/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/reunion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/reunion/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/il-caso-110/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/il-caso-110/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/il-caso-110/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/il-caso-110/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/il-caso-110/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/il-caso-110/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/il-caso-110/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/caviun/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/caviun/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/caviun/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/caviun/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/caviun/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/caviun/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/caviun/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/sconosciuto/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/sconosciuto/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/sconosciuto/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/sconosciuto/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/sconosciuto/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/sconosciuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/sconosciuto/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/bias/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/bias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/bias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/bias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/bias/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/bias/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/bias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/bias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/bias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/bias/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/bias/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/bias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/bias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/bias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/bias/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/manuale-completo-sulla-pallavolo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/manuale-completo-sulla-pallavolo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/manuale-completo-sulla-pallavolo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/manuale-completo-sulla-pallavolo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/smart-factory/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/smart-factory/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/smart-factory/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/smart-factory/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/smart-factory/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/smart-factory/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/smart-factory/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/little-bull/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/little-bull/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/little-bull/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/little-bull/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/little-bull/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/little-bull/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/little-bull/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/storyboard/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/storyboard/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/storyboard/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/storyboard/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/storyboard/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/storyboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/storyboard/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/lacrime-di-coccodrillo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/lacrime-di-coccodrillo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/lacrime-di-coccodrillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/lacrime-di-coccodrillo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/spot-mcdonalds/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/spot-mcdonalds/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/spot-mcdonalds/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/spot-mcdonalds/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/spot-mcdonalds/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/spot-mcdonalds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/spot-mcdonalds/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/artdeco-futuristic-city/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/artdeco-futuristic-city/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/artdeco-futuristic-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/artdeco-futuristic-city/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/bitpop/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/bitpop/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/bitpop/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/bitpop/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/bitpop/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/bitpop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/bitpop/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/eicrita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/eicrita/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/eicrita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/eicrita/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/eicrita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/eicrita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/eicrita/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/turntail/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/turntail/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/turntail/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/turntail/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/turntail/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/turntail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/turntail/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/pawned/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/pawned/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/pawned/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/pawned/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/pawned/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/pawned/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/pawned/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/dahu/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/dahu/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/dahu/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/dahu/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/dahu/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/dahu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/dahu/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/dreamshifters/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/dreamshifters/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/dreamshifters/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/dreamshifters/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/dreamshifters/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/dreamshifters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/dreamshifters/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/videogioco-detective/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/videogioco-detective/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/videogioco-detective/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/videogioco-detective/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/memories-of-beawood/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/memories-of-beawood/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/memories-of-beawood/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/memories-of-beawood/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/memories-of-beawood/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/memories-of-beawood/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/memories-of-beawood/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/down-memory-lane/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/down-memory-lane/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/down-memory-lane/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/down-memory-lane/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/down-memory-lane/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/down-memory-lane/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/down-memory-lane/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/vrscouting/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/vrscouting/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/vrscouting/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/vrscouting/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/vrscouting/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/vrscouting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/vrscouting/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/kipo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/kipo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/kipo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/kipo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/kipo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/kipo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/kipo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/babi-rave/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/babi-rave/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/babi-rave/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/babi-rave/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/babi-rave/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/babi-rave/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/babi-rave/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/sito-us-sangermanese/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/sito-us-sangermanese/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/sito-us-sangermanese/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/sito-us-sangermanese/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/sito-us-sangermanese/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/sito-us-sangermanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/sito-us-sangermanese/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/app-produttivita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/app-produttivita/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/app-produttivita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/app-produttivita/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/app-produttivita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/app-produttivita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/app-produttivita/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/pdf-suite-app/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/pdf-suite-app/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/pdf-suite-app/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/pdf-suite-app/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/pdf-suite-app/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/pdf-suite-app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/pdf-suite-app/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/stdouble2-box-model/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/stdouble2-box-model/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/stdouble2-box-model/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/stdouble2-box-model/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/stdouble2-box-model/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/stdouble2-box-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/stdouble2-box-model/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/phoneward/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/phoneward/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/phoneward/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/phoneward/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/phoneward/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/phoneward/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/phoneward/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/climaction/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/climaction/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/climaction/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/climaction/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/climaction/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/climaction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/climaction/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/wibo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/wibo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/wibo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/wibo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/wibo/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/wibo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/wibo/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/lavori/aliensarecoming/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/aliensarecoming/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/work/aliensarecoming/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/aliensarecoming/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/projets/aliensarecoming/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/aliensarecoming/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/aliensarecoming/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/chi-sono/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/chi-sono/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/chi-sono/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/chi-sono/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/chi-sono/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/a-propos/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/chi-sono/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/chi-sono/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/scrittura/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/scrittura/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/writing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/ecriture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/scrittura/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/writing/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/scrittura/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/writing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/ecriture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/scrittura/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/ecriture/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/scrittura/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/writing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/ecriture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/scrittura/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/contatti/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/contatti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/contatti/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/contatti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/contatti/"/>
+  </url>
+  <url>
+    <loc>https://edoardomaglio.github.io/fr/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/contatti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/contatti/"/>
+  </url>
+</urlset>

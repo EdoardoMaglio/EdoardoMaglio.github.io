@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Jeu vidéo de détective avec IA — Edoardo Maglio</title><meta name="description" content="Satire noire : l'IA du jeu se dérègle selon la façon dont vous l'utilisez."><link rel="canonical" href="https://edoardomaglio.github.io/fr/projets/videogioco-detective/"><link rel="alternate" hreflang="it" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"><link rel="alternate" hreflang="en" href="https://edoardomaglio.github.io/en/work/videogioco-detective/"><link rel="alternate" hreflang="fr" href="https://edoardomaglio.github.io/fr/projets/videogioco-detective/"><link rel="alternate" hreflang="x-default" href="https://edoardomaglio.github.io/lavori/videogioco-detective/"><meta property="og:site_name" content="Edoardo Maglio"><meta property="og:title" content="Jeu vidéo de détective avec IA — Edoardo Maglio"><meta property="og:description" content="Satire noire : l'IA du jeu se dérègle selon la façon dont vous l'utilisez."><meta property="og:type" content="website"><meta property="og:url" content="https://edoardomaglio.github.io/fr/projets/videogioco-detective/"><meta property="og:locale" content="fr_FR"><meta property="og:locale:alternate" content="it_IT"><meta property="og:locale:alternate" content="en_GB"><meta property="og:image" content="https://edoardomaglio.github.io/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Edoardo Maglio — Creative Technologist &amp; AI Specialist"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Jeu vidéo de détective avec IA — Edoardo Maglio"><meta name="twitter:description" content="Satire noire : l'IA du jeu se dérègle selon la façon dont vous l'utilisez."><meta name="twitter:image" content="https://edoardomaglio.github.io/og.png"><meta name="google-site-verification" content="4DjZ3C_rA__yjc-dHjDQ8pPga04j-amCOH_M8bSw6ng"><meta name="msvalidate.01" content="14E7CBF1331A1EC127B7B0ABC6532BE9"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preload" href="/font/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin><script>
+    try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script><link rel="stylesheet" href="/_astro/Base.35vaCL7a.css"></head><body><a class="skip" href="#contenuto">Aller au contenu</a><header><div class="wrap bar"><a class="logo" href="/fr/">Edoardo Maglio</a><nav aria-label="Principal"><ul><li><a href="/fr/projets/" aria-current="page">Projets</a></li><li><a href="/fr/a-propos/">À propos</a></li><li><a href="/fr/ecriture/">Écriture</a></li><li><a href="/fr/contact/">Contact</a></li></ul></nav><div class="tools"><details class="lingue"><summary class="tbtn" aria-label="FR · Langue: Français">FR</summary><ul><li><a href="/lavori/videogioco-detective/" hreflang="it" lang="it">ITA <span>Italiano</span></a></li><li><a href="/en/work/videogioco-detective/" hreflang="en" lang="en">ENG <span>English</span></a></li><li><a href="/fr/projets/videogioco-detective/" hreflang="fr" lang="fr" aria-current="true">FR <span>Français</span></a></li></ul></details><button class="tbtn" id="tema" type="button" data-scuro="Thème sombre" data-chiaro="Thème clair" data-scuro-title="Éteindre les lumières" data-chiaro-title="Rallumer la salle">Thème sombre</button></div></div></header><main id="contenuto" class="wrap"><a class="torna" href="/fr/projets/jeux/">← Jeux</a><div class="progetto-testa"><div><h1 style="font-size:var(--t-2xl)">Jeu vidéo de détective avec IA</h1><p class="riga">Satire noire : l&#39;IA du jeu se dérègle selon la façon dont vous l&#39;utilisez.</p></div><dl class="scheda"><dt>Année</dt><dd>2026</dd><dt>État</dt><dd><span class="stato">Concept</span></dd></dl></div></main><footer><div class="wrap"><p>© 2026 Edoardo Maglio · 0 cookie · 0 traceur</p><ul><li><a href="mailto:maglio.edoardo42@gmail.com">E-mail</a></li><li><a href="https://www.linkedin.com/in/edoardo-maglio-b419621a4">LinkedIn</a></li><li><a href="https://www.imdb.com/name/nm12219557/">IMDb</a></li><li><a href="https://github.com/EdoardoMaglio">GitHub</a></li></ul></div></footer><dialog class="lente" id="lente"><form method="dialog"><button class="btn" type="submit">Fermer</button></form><img alt=""></dialog><script>
+    // Tema: l'etichetta dice l'azione, il title aggiunge il suggerimento
+    (() => {
+      const b = document.getElementById('tema'), r = document.documentElement;
+      const scuro = () => (r.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+      const aggiorna = () => {
+        b.textContent = scuro() ? b.dataset.chiaro : b.dataset.scuro;
+        b.title = scuro() ? b.dataset.chiaroTitle : b.dataset.scuroTitle;
+      };
+      b.addEventListener('click', () => { r.dataset.theme = scuro() ? 'light' : 'dark'; try { localStorage.setItem('tema', r.dataset.theme); } catch (e) {} aggiorna(); });
+      aggiorna();
+    })();
+
+    // YouTube: senza JavaScript la copertina è un link al video.
+    // Con JavaScript, al clic carica il player da youtube-nocookie.com (prima, nessuna richiesta a YouTube).
+    document.querySelectorAll('a.play[data-yt]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const m = a.closest('.media');
+        const id = encodeURIComponent(a.dataset.yt);
+        const src = a.dataset.lista
+          ? `https://www.youtube-nocookie.com/embed/videoseries?list=${id}&autoplay=1&rel=0`
+          : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        const f = document.createElement('iframe');
+        f.src = src; f.title = a.dataset.titolo;
+        f.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture; gyroscope; accelerometer';
+        f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
+        m.replaceChildren(f); f.focus();
+      });
+    });
+
+    // Galleria: senza JavaScript ogni immagine si apre da sola; con JavaScript si ingrandisce sopra la pagina
+    const lente = document.getElementById('lente');
+    document.querySelectorAll('.galleria a').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const img = lente.querySelector('img');
+        img.src = a.href; img.alt = a.querySelector('img').alt;
+        lente.showModal();
+      });
+    });
+    lente.addEventListener('click', (e) => { if (e.target === lente) lente.close(); });
+  </script></body></html>
